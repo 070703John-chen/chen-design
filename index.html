@@ -1,17 +1,20 @@
-<html lang="zh-CN" data-public="1" style="--seaFade: 1.000;"><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light">
-<meta name="supported-color-schemes" content="light">
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="light" name="color-scheme"/>
+<meta content="light" name="supported-color-schemes"/>
 <title>视觉作品 · 陈强</title>
-<meta property="og:type" content="website">
-<meta property="og:title" content="陈强 · 视觉作品">
-<meta property="og:description" content="批量白底图 · 批量主图与附图 · 复刻与优化 · 个人设计作品集">
-<meta property="og:image" content="assets/og_cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="陈强 · 视觉作品">
-<meta name="twitter:image" content="assets/og_cover.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23F24E1E'/%3E%3Cpath d='M9 22V10h4.6c2.6 0 4.2 1.3 4.2 3.5 0 1.5-.8 2.5-2 3l2.6 5.5h-3l-2.3-5.1h-1.4V22H9zm2.7-7.2h1.7c1 0 1.6-.5 1.6-1.4s-.6-1.4-1.6-1.4h-1.7v2.8z' fill='%23fff'/%3E%3C/svg%3E">
+<meta content="website" property="og:type"/>
+<meta content="陈强 · 视觉作品" property="og:title"/>
+<meta content="批量白底图 · 批量主图与附图 · 复刻与优化 · 个人设计作品集" property="og:description"/>
+<meta content="assets/og_cover.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="陈强 · 视觉作品" name="twitter:title"/>
+<meta content="assets/og_cover.png" name="twitter:image"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23F24E1E'/%3E%3Cpath d='M9 22V10h4.6c2.6 0 4.2 1.3 4.2 3.5 0 1.5-.8 2.5-2 3l2.6 5.5h-3l-2.3-5.1h-1.4V22H9zm2.7-7.2h1.7c1 0 1.6-.5 1.6-1.4s-.6-1.4-1.6-1.4h-1.7v2.8z' fill='%23fff'/%3E%3C/svg%3E" rel="icon"/>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   :root{
@@ -1157,7 +1160,6 @@ footer .note{color:#A79E8D}
 }
 
 </style>
-
 <!-- 动效总开关：系统「减少动态效果」默认静默；用户在页面顶部手动切过则以用户为准 -->
 <script>
 window.__MOTION = (function () {
@@ -1170,469 +1172,453 @@ window.__MOTION = (function () {
 </script>
 </head>
 <body>
-<div class="sea" aria-hidden="true"></div>
-<div id="progress"><i style="width: 0%;"></i></div>
-<div id="rail" aria-hidden="true"><button aria-label="批量白底图" class=""><span>批量白底图</span></button><button aria-label="批量主图与附图" class=""><span>批量主图与附图</span></button><button aria-label="版式" class=""><span>版式</span></button><button aria-label="总览" class="on"><span>总览</span></button><button aria-label="个人设计作品集" class=""><span>个人设计作品集</span></button><button aria-label="复刻与优化" class=""><span>复刻与优化</span></button><button aria-label="原创主图" class=""><span>原创主图</span></button><button aria-label="批量套图" class=""><span>批量套图</span></button><button aria-label="流水线实测" class=""><span>流水线实测</span></button><button aria-label="方法沉淀"><span>方法沉淀</span></button><button aria-label="交付物清单"><span>交付物清单</span></button></div>
-<div id="loader" class="off">
-  <div class="lt">视觉作品</div>
-  <div class="lp"><i style="width: 100%;"></i></div>
+<div aria-hidden="true" class="sea"></div>
+<div id="progress"><i></i></div>
+<div aria-hidden="true" id="rail"></div>
+<div id="loader">
+<div class="lt">视觉作品</div>
+<div class="lp"><i></i></div>
 </div>
-
 <div class="stripe"><i></i><i></i><i></i><i></i><i></i></div>
-
 <nav id="top"><div class="wrap">
-  <div class="brand">视觉作品</div>
-  <div class="links">
-    <a href="#p1" class=""><b>01</b>批量白底图</a>
-    <a href="#p2" class=""><b>02</b>批量主图与附图</a>
-    <a href="#crt" class=""><b>03</b>版式</a>
-    <a href="#pf" class="on"><b>04</b>个人设计作品集</a>
-  </div>
-  <button id="tocBtn" aria-expanded="false" aria-controls="toc"><span class="t-long">全部章节</span><span class="t-short">章节</span></button>
-
-  <div id="toc" aria-label="全部章节">
-    <a href="#p3"><b>00</b><span>总览</span></a>
-    <a href="#p1"><b>01</b><span>批量白底图</span></a>
-    <a href="#p2"><b>02</b><span>批量主图与附图</span></a>
-    <a href="#crt"><b>03</b><span>版式</span></a>
-    <a href="#pf"><b>04</b><span>个人设计作品集</span></a>
-    <a href="#w1"><b>05</b><span>复刻与优化</span></a>
-    <a href="#w2"><b>06</b><span>原创主图</span></a>
-    <a href="#w3"><b>07</b><span>批量套图</span></a>
-    <a href="#w4"><b>08</b><span>流水线实测</span></a>
-    <a href="#method"><b>09</b><span>方法沉淀</span></a>
-    <a href="#files"><b>10</b><span>交付物清单</span></a>
-  </div>
-  <a id="pdfBtn" href="assets/portfolio_2026.pdf" download="陈强_视觉作品_作品集_2026.pdf" title="下载作品集 PDF（成品图版 · 全部作品页）">PDF 作品集</a>
-  <button id="waveBtn" aria-pressed="true" title="海面帧率过低，已冻结为静帧；内容渐显不受影响。点击可手动切换档位"><span class="t-long">动效 省电</span><span class="t-short">动效</span></button>
-  <button id="navbtn" aria-label="打开菜单" aria-expanded="false">☰</button>
+<div class="brand">视觉作品</div>
+<div class="links">
+<a href="#p1"><b>01</b>批量白底图</a>
+<a href="#p2"><b>02</b>批量主图与附图</a>
+<a href="#crt"><b>03</b>版式</a>
+<a href="#pf"><b>04</b>个人设计作品集</a>
+</div>
+<button aria-controls="toc" aria-expanded="false" id="tocBtn"><span class="t-long">全部章节</span><span class="t-short">章节</span></button>
+<div aria-label="全部章节" id="toc">
+<a href="#p3"><b>00</b><span>总览</span></a>
+<a href="#p1"><b>01</b><span>批量白底图</span></a>
+<a href="#p2"><b>02</b><span>批量主图与附图</span></a>
+<a href="#crt"><b>03</b><span>版式</span></a>
+<a href="#pf"><b>04</b><span>个人设计作品集</span></a>
+<a href="#w1"><b>05</b><span>复刻与优化</span></a>
+<a href="#w2"><b>06</b><span>原创主图</span></a>
+<a href="#w3"><b>07</b><span>批量套图</span></a>
+<a href="#w4"><b>08</b><span>流水线实测</span></a>
+<a href="#method"><b>09</b><span>方法沉淀</span></a>
+<a href="#files"><b>10</b><span>交付物清单</span></a>
+</div>
+<a download="陈强_视觉作品_作品集_2026.pdf" href="assets/portfolio_2026.pdf" id="pdfBtn" title="下载作品集 PDF（成品图版 · 全部作品页）">PDF 作品集</a>
+<button aria-pressed="true" id="waveBtn" title="开启/关闭动效（含内容渐显）"><span class="t-long">动效 开</span><span class="t-short">动效</span></button>
+<button aria-expanded="false" aria-label="打开菜单" id="navbtn">☰</button>
 </div></nav>
-
 <!-- ================= HERO ================= -->
 <header class="hero"><div class="wrap">
-  <div class="hero-grid">
-    <div>
-      <div class="eyebrow">Portfolio · Visual Design</div>
-      <h1>视觉作品</h1>
-      <p class="lead">专注电商视觉设计与批量交付 —— 商品白底图、主图与附图、套图、营销海报，以及自主命题品牌项目。</p>
-      <ul class="hlist">
-        <li><b>01</b>批量白底图　<span>原图 → 白底定稿</span></li>
-        <li><b>02</b>批量主图与附图　<span>单一版式覆盖 4 个品类<em class="cats">LED灯 · 香水 · 零食 · 电煮锅</em></span></li>
-        <li><b>03</b>版式　<span>同一品类 · 六套原创版式</span></li>
-        <li><b>04</b>个人设计作品集　<span>自主命题项目与源件</span></li>
-      </ul>
-      <div class="cta">
-        <a class="btn solid mag" href="#p1">看三段对比</a>
-        <a class="btn ghost mag" href="#crt">看版式</a>
-        <button class="btn ghost mag" id="openGal" style="cursor:pointer;font-family:inherit">看全部作品</button>
-        <a class="btn ghost mag" href="assets/portfolio_2026.pdf" download="陈强_视觉作品_作品集_2026.pdf">下载 PDF 作品集</a>
-      </div>
-    </div>
-    <div class="canvas">
-      <!-- TODO: 后续替换为最近的个人设计作品集 -->
-      <canvas class="ocean" data-variant="hero" data-rows="22" data-alpha=".62" data-color-a="#F0A25C" data-color-b="#5A3418" data-amp=".9" data-horizon=".5" data-glow="1.5" width="271" height="325"></canvas>
-      <div class="art">
-        <a class="cell" href="#p1" data-depth="-6"><img src="assets/p1_s14_gen.jpg" alt="RGB 像素灯带 白底定稿" class="il done"><span class="cb"><b>01</b>批量白底图</span></a>
-        <a class="cell" href="#p2" data-depth="9"><img src="assets/p2_m_scene_final.jpg" alt="灯带 主图场景位 促销成品" class="il done"><span class="cb"><b>02</b>批量主图与附图</span></a>
-        <a class="cell" href="#crt" data-depth="-12"><img src="assets/create_3.jpg" alt="LED 球泡灯 极简留白 版式" class="il done"><span class="cb"><b>03</b>版式</span></a>
-        <a class="cell" href="#pf" data-depth="15"><img src="assets/originals/guanzhi/01-hero.jpg" alt="个人设计作品集 · 观时" class="il done"><span class="cb"><b>04</b>个人作品集</span></a>
-      </div>
-      <div class="pill">成品图 · 4 品类覆盖</div>
-      <div class="cap">点四格直达对应章节</div>
-    </div>
-  </div>
-
-  <div class="kpis">
-    <div class="kpi rv in" style="transition-delay: 0ms;"><div class="n">4<small> 品类</small></div><div class="l">覆盖商品品类</div></div>
-    <div class="kpi rv in" style="transition-delay: 70ms;"><div class="n">20<small> 组</small></div><div class="l">主图与附图成套组数</div></div>
-    <div class="kpi rv in" style="transition-delay: 140ms;"><div class="n">2<small> 个</small></div><div class="l">自主命题品牌 · 3 组作品</div></div>
-    <div class="kpi rv in" style="transition-delay: 210ms;"><div class="n">6<small> 张</small></div><div class="l">商业促销海报，含零售连锁双版式</div></div>
-  </div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Portfolio · Visual Design</div>
+<h1>视觉作品</h1>
+<p class="lead">专注电商视觉设计与批量交付 —— 商品白底图、主图与附图、套图、营销海报，以及自主命题品牌项目。</p>
+<ul class="hlist">
+<li><b>01</b>批量白底图　<span>原图 → 白底定稿</span></li>
+<li><b>02</b>批量主图与附图　<span>单一版式覆盖 4 个品类<em class="cats">LED灯 · 香水 · 零食 · 电煮锅</em></span></li>
+<li><b>03</b>版式　<span>同一品类 · 六套原创版式</span></li>
+<li><b>04</b>个人设计作品集　<span>自主命题项目与源件</span></li>
+</ul>
+<div class="cta">
+<a class="btn solid" href="#p1">看三段对比</a>
+<a class="btn ghost" href="#crt">看版式</a>
+<button class="btn ghost" id="openGal" style="cursor:pointer;font-family:inherit">看全部作品</button>
+<a class="btn ghost" download="陈强_视觉作品_作品集_2026.pdf" href="assets/portfolio_2026.pdf">下载 PDF 作品集</a>
+</div>
+</div>
+<div class="canvas">
+<!-- TODO: 后续替换为最近的个人设计作品集 -->
+<canvas class="ocean" data-alpha=".62" data-amp=".9" data-color-a="#F0A25C" data-color-b="#5A3418" data-glow="1.5" data-horizon=".5" data-rows="22" data-variant="hero"></canvas>
+<div class="art">
+<a class="cell" href="#p1"><img alt="RGB 像素灯带 白底定稿" src="assets/p1_s14_gen.jpg"/><span class="cb"><b>01</b>批量白底图</span></a>
+<a class="cell" href="#p2"><img alt="灯带 主图场景位 促销成品" src="assets/p2_m_scene_final.jpg"/><span class="cb"><b>02</b>批量主图与附图</span></a>
+<a class="cell" href="#crt"><img alt="LED 球泡灯 极简留白 版式" src="assets/create_3.jpg"/><span class="cb"><b>03</b>版式</span></a>
+<a class="cell" href="#pf"><img alt="个人设计作品集 · 观时" src="assets/originals/guanzhi/01-hero.jpg"/><span class="cb"><b>04</b>个人作品集</span></a>
+</div>
+<div class="pill">成品图 · 4 品类覆盖</div>
+<div class="cap">点四格直达对应章节</div>
+</div>
+</div>
+<div class="kpis">
+<div class="kpi"><div class="n">4<small> 品类</small></div><div class="l">覆盖商品品类</div></div>
+<div class="kpi"><div class="n">20<small> 组</small></div><div class="l">主图与附图成套组数</div></div>
+<div class="kpi"><div class="n">2<small> 个</small></div><div class="l">自主命题品牌 · 3 组作品</div></div>
+<div class="kpi"><div class="n">6<small> 张</small></div><div class="l">商业促销海报，含零售连锁双版式</div></div>
+</div>
 </div></header>
-
 <!-- ================= P1 白底图对比 ================= -->
 <section class="band alt" id="p3"><div class="wrap">
-  <div class="sec-head b rv in">
-    <div class="no">00 · 总览</div>
-    <h2>电商视觉交付能力总览</h2>
-    <p class="sub">01–04 为可直接上架的成品图；05–08 为支撑批量输出的方法、规范与验证链路。</p>
-  </div>
-
-    <div class="p3row">
-  <div class="pcard wcard rv in">
-      <div class="hd">
-        <div class="no">01</div>
-        <div class="t">批量白底图</div>
-        <div class="d">抠底 · 去彩污 · 纯白判定</div>
-      </div>
-      <div class="shots">
-        <div class="shot"><img src="assets/p1_s09_gen.jpg" alt="编织绳灯带" class="il done"><span class="lb">编织绳灯带</span></div>
-        <div class="shot"><img src="assets/p1_s14_gen.jpg" alt="RGB 像素灯带" class="il done"><span class="lb">RGB 像素灯带</span></div>
-      </div>
-      <a class="more mag" href="#p1">看全部 →</a>
-    </div>
-  <div class="pcard wcard rv in">
-      <div class="hd">
-        <div class="no">02</div>
-        <div class="t">批量主图与附图</div>
-      <div class="d">4 品类 × 5 图位 · 同一套版式</div>
-      </div>
-      <div class="shots">
-        <div class="shot"><img src="assets/p3_m.jpg" alt="主图 · 场景" class="il done"><span class="lb">主图 · 场景</span></div>
-        <div class="shot"><img src="assets/p3_s.jpg" alt="附图 · 参数" class="il done"><span class="lb">附图 · 参数</span></div>
-      </div>
-      <a class="more mag" href="#p2">看全部 →</a>
-    </div>
-  <div class="pcard wcard rv in">
-      <div class="hd">
-        <div class="no">03</div>
-        <div class="t">版式</div>
-        <div class="d">同一品类 · 六套原创版式</div>
-      </div>
-      <div class="shots">
-        <div class="shot"><img src="assets/create_1.jpg" alt="场景叙事" class="il done"><span class="lb">场景叙事</span></div>
-        <div class="shot"><img src="assets/create_3.jpg" alt="极简留白" class="il done"><span class="lb">极简留白</span></div>
-      </div>
-      <a class="more mag" href="#crt">看全部 →</a>
-    </div>
-  <div class="pcard wcard rv in">
-      <div class="hd">
-        <div class="no">04</div>
-        <div class="t">个人设计作品集</div>
-        <div class="d">自主命题品牌项目与商业海报</div>
-      </div>
-      <div class="shots">
-        <div class="shot"><img src="assets/originals/posters/POSTER-叙光.jpg" alt="商业海报 · 叙光灯带" class="il done"><span class="lb">商业海报</span></div>
-        <div class="shot"><img src="assets/originals/guanzhi/01-hero.jpg" alt="手表 · 观时 GUĀNSHÍ" class="il done"><span class="lb">手表 · 观时</span></div>
-      </div>
-      <a class="more mag" href="#pf">看全部 →</a>
-    </div>
-  <div class="pcard wcard rv in">
-      <div class="hd">
-        <div class="no">05</div>
-        <div class="t">复刻与优化</div>
-      <div class="d">一张同行主图拆成可复用的版式</div>
-      </div>
-      <div class="shots">
-        <div class="shot"><img src="assets/skeleton_layout.png" alt="版式骨架" class="il done"><span class="lb">版式骨架</span></div>
-        <div class="shot"><img src="assets/led_hero.jpg" alt="自有产品重做" class="il done"><span class="lb">自有产品重做</span></div>
-      </div>
-      <a class="more mag" href="#w1">看全部 →</a>
-    </div>
-  <div class="pcard wcard rv in">
-      <div class="hd">
-        <div class="no">06</div>
-        <div class="t">原创主图</div>
-        <div class="d">不用竞品底图，从零画一版能上架的主图</div>
-      </div>
-      <div class="shots">
-        <div class="shot"><img src="assets/led_cutout.jpg" alt="主体抠图" class="il done"><span class="lb">主体抠图</span></div>
-        <div class="shot"><img src="assets/led_800.jpg" alt="800 方图" class="il done"><span class="lb">800 方图</span></div>
-      </div>
-      <a class="more mag" href="#w2">看全部 →</a>
-    </div>
-  <div class="pcard wcard rv in">
-      <div class="hd">
-        <div class="no">07</div>
-        <div class="t">批量套图</div>
-      <div class="d">多品类视觉套图，统一版式与图位</div>
-      </div>
-      <div class="shots">
-        <div class="shot"><img src="assets/wall42/t01.jpg" alt="吸顶灯 · 场景" class="il done"><span class="lb">吸顶灯 · 场景</span></div>
-        <div class="shot"><img src="assets/wall42/t07.jpg" alt="吸顶灯 · 对比" class="il done"><span class="lb">吸顶灯 · 对比</span></div>
-      </div>
-      <a class="more mag" href="#w3">看全部 →</a>
-    </div>
-  <div class="pcard wcard rv in">
-      <div class="hd">
-        <div class="no">08</div>
-        <div class="t">流水线实测</div>
-        <div class="d">六张参考图，抽象为三套版式体系</div>
-      </div>
-      <div class="shots">
-        <div class="shot"><img src="assets/restore_r15/cmp_ALTFO_P1_S3.jpg" alt="零食 对比" class="il done"><span class="lb">零食 · 差异 0.00%</span></div>
-        <div class="shot"><img src="assets/restore_r15/cmp_ALT2PO_P3_S4.jpg" alt="电煮锅 对比" class="il done"><span class="lb">电煮锅 · 差异 5.37%</span></div>
-      </div>
-      <a class="more mag" href="#w4">看全部 →</a>
-    </div>
-  </div>
-
-  <div class="p3more">
-    <a href="#method"><b>09</b><span>方法沉淀</span><em>经验怎么变成模板</em></a>
-    <a href="#files"><b>10</b><span>交付物清单</span><em>每个项目交什么</em></a>
-  </div>
-<div class="nextbar"><a href="#p1"><span class="nl">下一节</span><span class="nt">批量白底图 →</span></a></div></div></section>
-
-<section class="band" id="p1"><div class="wrap">
-  <div class="sec-head a rv in">
-    <div class="no">01 · 批量白底图</div>
-    <h2>商品白底图标准化处理</h2>
-    <p class="sub">抠底、去彩污、纯白判定三道工序，输出 1024×1024 平台直出图，覆盖盒装、浅色与深色反光三类难例。</p>
-  </div>
-  <div class="chips rv in">
-    <span class="chip acc"><b>3</b>组对照</span>
-    <span class="chip"><b>抠底 · 去彩污 · 纯白判定</b></span>
-    <span class="chip"><b>1024×1024</b>定稿尺寸</span>
-    <span class="chip"><b>255</b>四角纯白判定</span>
-  </div>
-  <div class="white-block">
-  <div class="white-grid">
-    <div class="white-pair">
-      <figure class="pane"><span class="tag orig">采集原图</span><div class="shot"><img src="assets/white_candidates/01_lepro_original.jpg" alt="Lepro SE1 智能灯带 采集原图" class="il done"></div></figure>
-      <figure class="pane"><span class="tag gen">对比图 · 原图左 / 白底右</span><div class="shot"><img src="assets/white_candidates/01_lepro_compare.jpg" alt="Lepro SE1 智能灯带 原图与白底定稿对比" class="il done"></div></figure>
-    </div>
-    <figure class="pane"><span class="tag gen">白底定稿</span><div class="shot"><img src="assets/white_candidates/01_lepro_white.jpg" alt="Lepro SE1 智能灯带 白底定稿" class="il done"></div></figure>
-  </div>
-  <figcaption class="cap">Lepro SE1 智能灯带 · 盒装产品全家福 → 白底灯带与控制器；主体识别、边缘清理与纯白判定一次完成。</figcaption>
-</div><div class="white-block">
-  <div class="white-grid">
-    <div class="white-pair">
-      <figure class="pane"><span class="tag orig">采集原图</span><div class="shot"><img src="assets/white_candidates/02_pot_original.jpg" alt="MorningSo 电煮锅 采集原图" class="il done"></div></figure>
-      <figure class="pane"><span class="tag gen">对比图 · 原图左 / 白底右</span><div class="shot"><img loading="lazy" src="assets/white_candidates/02_pot_compare.jpg" alt="MorningSo 电煮锅 原图与白底定稿对比" class="il done"></div></figure>
-    </div>
-    <figure class="pane"><span class="tag gen">白底定稿</span><div class="shot"><img loading="lazy" src="assets/white_candidates/02_pot_white.jpg" alt="MorningSo 电煮锅 白底定稿" class="il done"></div></figure>
-  </div>
-  <figcaption class="cap">MorningSo 电煮锅 · 暖色餐桌场景 → 纯白底主体；重点处理浅色产品的边缘、色偏与接触阴影。</figcaption>
-</div><div class="white-block">
-  <div class="white-grid">
-    <div class="white-pair">
-      <figure class="pane"><span class="tag orig">采集原图</span><div class="shot"><img loading="lazy" src="assets/white_candidates/03_phone_original.jpg" alt="Philips 翻盖手机 采集原图" class="il done"></div></figure>
-      <figure class="pane"><span class="tag gen">对比图 · 原图左 / 白底右</span><div class="shot"><img loading="lazy" src="assets/white_candidates/03_phone_compare.jpg" alt="Philips 翻盖手机 原图与白底定稿对比" class="il done"></div></figure>
-    </div>
-    <figure class="pane"><span class="tag gen">白底定稿</span><div class="shot"><img loading="lazy" src="assets/white_candidates/03_phone_white.jpg" alt="Philips 翻盖手机 白底定稿" class="il done"></div></figure>
-  </div>
-  <figcaption class="cap">Philips 翻盖手机 · 深色场景与反光机身 → 纯白底双机位；重点处理硬边、高光与反射。</figcaption>
+<div class="sec-head b">
+<div class="no">00 · 总览</div>
+<h2>电商视觉交付能力总览</h2>
+<p class="sub">01–04 为可直接上架的成品图；05–08 为支撑批量输出的方法、规范与验证链路。</p>
 </div>
-<div class="nextbar"><a href="#p2"><span class="nl">下一节</span><span class="nt">批量主图与附图 →</span></a></div></div></section>
-
+<div class="p3row">
+<div class="pcard wcard">
+<div class="hd">
+<div class="no">01</div>
+<div class="t">批量白底图</div>
+<div class="d">抠底 · 去彩污 · 纯白判定</div>
+</div>
+<div class="shots">
+<div class="shot"><img alt="编织绳灯带" src="assets/p1_s09_gen.jpg"/><span class="lb">编织绳灯带</span></div>
+<div class="shot"><img alt="RGB 像素灯带" src="assets/p1_s14_gen.jpg"/><span class="lb">RGB 像素灯带</span></div>
+</div>
+<a class="more" href="#p1">看全部 →</a>
+</div>
+<div class="pcard wcard">
+<div class="hd">
+<div class="no">02</div>
+<div class="t">批量主图与附图</div>
+<div class="d">4 品类 × 5 图位 · 同一套版式</div>
+</div>
+<div class="shots">
+<div class="shot"><img alt="主图 · 场景" src="assets/p3_m.jpg"/><span class="lb">主图 · 场景</span></div>
+<div class="shot"><img alt="附图 · 参数" src="assets/p3_s.jpg"/><span class="lb">附图 · 参数</span></div>
+</div>
+<a class="more" href="#p2">看全部 →</a>
+</div>
+<div class="pcard wcard">
+<div class="hd">
+<div class="no">03</div>
+<div class="t">版式</div>
+<div class="d">同一品类 · 六套原创版式</div>
+</div>
+<div class="shots">
+<div class="shot"><img alt="场景叙事" src="assets/create_1.jpg"/><span class="lb">场景叙事</span></div>
+<div class="shot"><img alt="极简留白" src="assets/create_3.jpg"/><span class="lb">极简留白</span></div>
+</div>
+<a class="more" href="#crt">看全部 →</a>
+</div>
+<div class="pcard wcard">
+<div class="hd">
+<div class="no">04</div>
+<div class="t">个人设计作品集</div>
+<div class="d">自主命题品牌项目与商业海报</div>
+</div>
+<div class="shots">
+<div class="shot"><img alt="商业海报 · 叙光灯带" src="assets/originals/posters/POSTER-叙光.jpg"/><span class="lb">商业海报</span></div>
+<div class="shot"><img alt="手表 · 观时 GUĀNSHÍ" src="assets/originals/guanzhi/01-hero.jpg"/><span class="lb">手表 · 观时</span></div>
+</div>
+<a class="more" href="#pf">看全部 →</a>
+</div>
+<div class="pcard wcard">
+<div class="hd">
+<div class="no">05</div>
+<div class="t">复刻与优化</div>
+<div class="d">一张同行主图拆成可复用的版式</div>
+</div>
+<div class="shots">
+<div class="shot"><img alt="版式骨架" src="assets/skeleton_layout.png"/><span class="lb">版式骨架</span></div>
+<div class="shot"><img alt="自有产品重做" src="assets/led_hero.jpg"/><span class="lb">自有产品重做</span></div>
+</div>
+<a class="more" href="#w1">看全部 →</a>
+</div>
+<div class="pcard wcard">
+<div class="hd">
+<div class="no">06</div>
+<div class="t">原创主图</div>
+<div class="d">不用竞品底图，从零画一版能上架的主图</div>
+</div>
+<div class="shots">
+<div class="shot"><img alt="主体抠图" src="assets/led_cutout.jpg"/><span class="lb">主体抠图</span></div>
+<div class="shot"><img alt="800 方图" src="assets/led_800.jpg"/><span class="lb">800 方图</span></div>
+</div>
+<a class="more" href="#w2">看全部 →</a>
+</div>
+<div class="pcard wcard">
+<div class="hd">
+<div class="no">07</div>
+<div class="t">批量套图</div>
+<div class="d">多品类视觉套图，统一版式与图位</div>
+</div>
+<div class="shots">
+<div class="shot"><img alt="吸顶灯 · 场景" src="assets/wall42/t01.jpg"/><span class="lb">吸顶灯 · 场景</span></div>
+<div class="shot"><img alt="吸顶灯 · 对比" src="assets/wall42/t07.jpg"/><span class="lb">吸顶灯 · 对比</span></div>
+</div>
+<a class="more" href="#w3">看全部 →</a>
+</div>
+<div class="pcard wcard">
+<div class="hd">
+<div class="no">08</div>
+<div class="t">流水线实测</div>
+<div class="d">六张参考图，抽象为三套版式体系</div>
+</div>
+<div class="shots">
+<div class="shot"><img alt="零食 对比" src="assets/restore_r15/cmp_ALTFO_P1_S3.jpg"/><span class="lb">零食 · 差异 0.00%</span></div>
+<div class="shot"><img alt="电煮锅 对比" src="assets/restore_r15/cmp_ALT2PO_P3_S4.jpg"/><span class="lb">电煮锅 · 差异 5.37%</span></div>
+</div>
+<a class="more" href="#w4">看全部 →</a>
+</div>
+</div>
+<div class="p3more">
+<a href="#method"><b>09</b><span>方法沉淀</span><em>经验怎么变成模板</em></a>
+<a href="#files"><b>10</b><span>交付物清单</span><em>每个项目交什么</em></a>
+</div>
+</div></section>
+<section class="band" id="p1"><div class="wrap">
+<div class="sec-head a">
+<div class="no">01 · 批量白底图</div>
+<h2>商品白底图标准化处理</h2>
+<p class="sub">抠底、去彩污、纯白判定三道工序，输出 1024×1024 平台直出图，覆盖盒装、浅色与深色反光三类难例。</p>
+</div>
+<div class="chips">
+<span class="chip acc"><b>3</b>组对照</span>
+<span class="chip"><b>抠底 · 去彩污 · 纯白判定</b></span>
+<span class="chip"><b>1024×1024</b>定稿尺寸</span>
+<span class="chip"><b>255</b>四角纯白判定</span>
+</div>
+<div class="white-block">
+<div class="white-grid">
+<div class="white-pair">
+<figure class="pane"><span class="tag orig">采集原图</span><div class="shot"><img alt="Lepro SE1 智能灯带 采集原图" src="assets/white_candidates/01_lepro_original.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">对比图 · 原图左 / 白底右</span><div class="shot"><img alt="Lepro SE1 智能灯带 原图与白底定稿对比" src="assets/white_candidates/01_lepro_compare.jpg"/></div></figure>
+</div>
+<figure class="pane"><span class="tag gen">白底定稿</span><div class="shot"><img alt="Lepro SE1 智能灯带 白底定稿" src="assets/white_candidates/01_lepro_white.jpg"/></div></figure>
+</div>
+<figcaption class="cap">Lepro SE1 智能灯带 · 盒装产品全家福 → 白底灯带与控制器；主体识别、边缘清理与纯白判定一次完成。</figcaption>
+</div><div class="white-block">
+<div class="white-grid">
+<div class="white-pair">
+<figure class="pane"><span class="tag orig">采集原图</span><div class="shot"><img alt="MorningSo 电煮锅 采集原图" src="assets/white_candidates/02_pot_original.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">对比图 · 原图左 / 白底右</span><div class="shot"><img alt="MorningSo 电煮锅 原图与白底定稿对比" loading="lazy" src="assets/white_candidates/02_pot_compare.jpg"/></div></figure>
+</div>
+<figure class="pane"><span class="tag gen">白底定稿</span><div class="shot"><img alt="MorningSo 电煮锅 白底定稿" loading="lazy" src="assets/white_candidates/02_pot_white.jpg"/></div></figure>
+</div>
+<figcaption class="cap">MorningSo 电煮锅 · 暖色餐桌场景 → 纯白底主体；重点处理浅色产品的边缘、色偏与接触阴影。</figcaption>
+</div><div class="white-block">
+<div class="white-grid">
+<div class="white-pair">
+<figure class="pane"><span class="tag orig">采集原图</span><div class="shot"><img alt="Philips 翻盖手机 采集原图" loading="lazy" src="assets/white_candidates/03_phone_original.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">对比图 · 原图左 / 白底右</span><div class="shot"><img alt="Philips 翻盖手机 原图与白底定稿对比" loading="lazy" src="assets/white_candidates/03_phone_compare.jpg"/></div></figure>
+</div>
+<figure class="pane"><span class="tag gen">白底定稿</span><div class="shot"><img alt="Philips 翻盖手机 白底定稿" loading="lazy" src="assets/white_candidates/03_phone_white.jpg"/></div></figure>
+</div>
+<figcaption class="cap">Philips 翻盖手机 · 深色场景与反光机身 → 纯白底双机位；重点处理硬边、高光与反射。</figcaption>
+</div>
+</div></section>
 <!-- ================= P2 主图与附图对比 ================= -->
 <section class="band alt" id="p2"><div class="wrap">
-  <div class="sec-head a rv in">
-    <div class="no">02 · 批量主图与附图</div>
-    <h2>主图与附图成套输出</h2>
-    <p class="sub">单一版式体系覆盖多品类，文字位、价格位、角标位保留为可替换字段；换 SKU 仅替换数据，不重排版。</p>
-  </div>
-  <div class="chips rv in">
-    <span class="chip acc"><b>4</b>品类</span>
-    <span class="chip"><b>5</b>图位 / 品类</span>
-    <span class="chip"><b>20</b>组对比</span>
-    <span class="chip"><b>文字位</b>留空可换</span>
-  </div>
-  <div class="set-block">
-  <div class="set-head"><h3>LED灯</h3><span>1 主图 + 4 附图</span></div>
-  <div class="set-main"><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/LED灯_ALTLE_P2_M_orig.jpg" alt="LED灯 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/LED灯_ALTLE_P2_M.jpg" alt="LED灯 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">主图</div>
+<div class="sec-head a">
+<div class="no">02 · 批量主图与附图</div>
+<h2>主图与附图成套输出</h2>
+<p class="sub">单一版式体系覆盖多品类，文字位、价格位、角标位保留为可替换字段；换 SKU 仅替换数据，不重排版。</p>
+</div>
+<div class="chips">
+<span class="chip acc"><b>4</b>品类</span>
+<span class="chip"><b>5</b>图位 / 品类</span>
+<span class="chip"><b>20</b>组对比</span>
+<span class="chip"><b>文字位</b>留空可换</span>
+</div>
+<div class="set-block">
+<div class="set-head"><h3>LED灯</h3><span>1 主图 + 4 附图</span></div>
+<div class="set-main"><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="LED灯 原图" loading="lazy" src="assets/replica_sets/orig/LED灯_ALTLE_P2_M_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="LED灯 复刻稿" loading="lazy" src="assets/replica_sets/LED灯_ALTLE_P2_M.jpg"/></div></figure>
+</div>
+<div class="set-cap">主图</div>
 </div></div>
-  <div class="set-subs"><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/LED灯_ALTLE_P2_S_orig.jpg" alt="LED灯 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/LED灯_ALTLE_P2_S.jpg" alt="LED灯 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">卖点 / 场景</div>
+<div class="set-subs"><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="LED灯 原图" loading="lazy" src="assets/replica_sets/orig/LED灯_ALTLE_P2_S_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="LED灯 复刻稿" loading="lazy" src="assets/replica_sets/LED灯_ALTLE_P2_S.jpg"/></div></figure>
+</div>
+<div class="set-cap">卖点 / 场景</div>
 </div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/LED灯_ALTLE_P2_S2_orig.jpg" alt="LED灯 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/LED灯_ALTLE_P2_S2.jpg" alt="LED灯 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">细节</div>
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="LED灯 原图" loading="lazy" src="assets/replica_sets/orig/LED灯_ALTLE_P2_S2_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="LED灯 复刻稿" loading="lazy" src="assets/replica_sets/LED灯_ALTLE_P2_S2.jpg"/></div></figure>
+</div>
+<div class="set-cap">细节</div>
 </div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/LED灯_ALTLE_P2_S3_orig.jpg" alt="LED灯 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/LED灯_ALTLE_P2_S3.jpg" alt="LED灯 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">参数</div>
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="LED灯 原图" loading="lazy" src="assets/replica_sets/orig/LED灯_ALTLE_P2_S3_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="LED灯 复刻稿" loading="lazy" src="assets/replica_sets/LED灯_ALTLE_P2_S3.jpg"/></div></figure>
+</div>
+<div class="set-cap">参数</div>
 </div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/LED灯_ALTLE_P2_S4_orig.jpg" alt="LED灯 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/LED灯_ALTLE_P2_S4.jpg" alt="LED灯 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">对比 / 安装</div>
-</div></div>
-</div><div class="set-block">
-  <div class="set-head"><h3>香水</h3><span>1 主图 + 4 附图</span></div>
-  <div class="set-main"><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/香水_ALT2PE_P4_M_orig.jpg" alt="香水 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/香水_ALT2PE_P4_M.jpg" alt="香水 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">主图</div>
-</div></div>
-  <div class="set-subs"><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/香水_ALT2PE_P4_S_orig.jpg" alt="香水 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/香水_ALT2PE_P4_S.jpg" alt="香水 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">卖点 / 场景</div>
-</div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/香水_ALT2PE_P4_S2_orig.jpg" alt="香水 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/香水_ALT2PE_P4_S2.jpg" alt="香水 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">细节</div>
-</div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/香水_ALT2PE_P4_S3_orig.jpg" alt="香水 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/香水_ALT2PE_P4_S3.jpg" alt="香水 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">参数</div>
-</div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/香水_ALT2PE_P4_S4_orig.jpg" alt="香水 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/香水_ALT2PE_P4_S4.jpg" alt="香水 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">对比 / 安装</div>
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="LED灯 原图" loading="lazy" src="assets/replica_sets/orig/LED灯_ALTLE_P2_S4_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="LED灯 复刻稿" loading="lazy" src="assets/replica_sets/LED灯_ALTLE_P2_S4.jpg"/></div></figure>
+</div>
+<div class="set-cap">对比 / 安装</div>
 </div></div>
 </div><div class="set-block">
-  <div class="set-head"><h3>零食</h3><span>1 主图 + 4 附图</span></div>
-  <div class="set-main"><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/零食_ALTFO_P3_M_orig.jpg" alt="零食 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/零食_ALTFO_P3_M.jpg" alt="零食 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">主图</div>
+<div class="set-head"><h3>香水</h3><span>1 主图 + 4 附图</span></div>
+<div class="set-main"><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="香水 原图" loading="lazy" src="assets/replica_sets/orig/香水_ALT2PE_P4_M_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="香水 复刻稿" loading="lazy" src="assets/replica_sets/香水_ALT2PE_P4_M.jpg"/></div></figure>
+</div>
+<div class="set-cap">主图</div>
 </div></div>
-  <div class="set-subs"><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/零食_ALTFO_P3_S_orig.jpg" alt="零食 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/零食_ALTFO_P3_S.jpg" alt="零食 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">卖点 / 场景</div>
+<div class="set-subs"><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="香水 原图" loading="lazy" src="assets/replica_sets/orig/香水_ALT2PE_P4_S_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="香水 复刻稿" loading="lazy" src="assets/replica_sets/香水_ALT2PE_P4_S.jpg"/></div></figure>
+</div>
+<div class="set-cap">卖点 / 场景</div>
 </div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/零食_ALTFO_P3_S2_orig.jpg" alt="零食 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/零食_ALTFO_P3_S2.jpg" alt="零食 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">细节</div>
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="香水 原图" loading="lazy" src="assets/replica_sets/orig/香水_ALT2PE_P4_S2_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="香水 复刻稿" loading="lazy" src="assets/replica_sets/香水_ALT2PE_P4_S2.jpg"/></div></figure>
+</div>
+<div class="set-cap">细节</div>
 </div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/零食_ALTFO_P3_S3_orig.jpg" alt="零食 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/零食_ALTFO_P3_S3.jpg" alt="零食 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">参数</div>
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="香水 原图" loading="lazy" src="assets/replica_sets/orig/香水_ALT2PE_P4_S3_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="香水 复刻稿" loading="lazy" src="assets/replica_sets/香水_ALT2PE_P4_S3.jpg"/></div></figure>
+</div>
+<div class="set-cap">参数</div>
 </div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/零食_ALTFO_P3_S4_orig.jpg" alt="零食 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/零食_ALTFO_P3_S4.jpg" alt="零食 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">对比 / 安装</div>
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="香水 原图" loading="lazy" src="assets/replica_sets/orig/香水_ALT2PE_P4_S4_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="香水 复刻稿" loading="lazy" src="assets/replica_sets/香水_ALT2PE_P4_S4.jpg"/></div></figure>
+</div>
+<div class="set-cap">对比 / 安装</div>
 </div></div>
 </div><div class="set-block">
-  <div class="set-head"><h3>电煮锅</h3><span>1 主图 + 4 附图</span></div>
-  <div class="set-main"><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/电煮锅_ALT2PO_P3_M_orig.jpg" alt="电煮锅 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/电煮锅_ALT2PO_P3_M.jpg" alt="电煮锅 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">主图</div>
+<div class="set-head"><h3>零食</h3><span>1 主图 + 4 附图</span></div>
+<div class="set-main"><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="零食 原图" loading="lazy" src="assets/replica_sets/orig/零食_ALTFO_P3_M_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="零食 复刻稿" loading="lazy" src="assets/replica_sets/零食_ALTFO_P3_M.jpg"/></div></figure>
+</div>
+<div class="set-cap">主图</div>
 </div></div>
-  <div class="set-subs"><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/电煮锅_ALT2PO_P3_S_orig.jpg" alt="电煮锅 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/电煮锅_ALT2PO_P3_S.jpg" alt="电煮锅 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">卖点 / 场景</div>
+<div class="set-subs"><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="零食 原图" loading="lazy" src="assets/replica_sets/orig/零食_ALTFO_P3_S_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="零食 复刻稿" loading="lazy" src="assets/replica_sets/零食_ALTFO_P3_S.jpg"/></div></figure>
+</div>
+<div class="set-cap">卖点 / 场景</div>
 </div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/电煮锅_ALT2PO_P3_S2_orig.jpg" alt="电煮锅 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/电煮锅_ALT2PO_P3_S2.jpg" alt="电煮锅 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">细节</div>
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="零食 原图" loading="lazy" src="assets/replica_sets/orig/零食_ALTFO_P3_S2_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="零食 复刻稿" loading="lazy" src="assets/replica_sets/零食_ALTFO_P3_S2.jpg"/></div></figure>
+</div>
+<div class="set-cap">细节</div>
 </div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/电煮锅_ALT2PO_P3_S3_orig.jpg" alt="电煮锅 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/电煮锅_ALT2PO_P3_S3.jpg" alt="电煮锅 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">参数</div>
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="零食 原图" loading="lazy" src="assets/replica_sets/orig/零食_ALTFO_P3_S3_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="零食 复刻稿" loading="lazy" src="assets/replica_sets/零食_ALTFO_P3_S3.jpg"/></div></figure>
+</div>
+<div class="set-cap">参数</div>
 </div><div class="set-item">
-  <div class="cmp-grid">
-    <figure class="pane"><span class="tag orig">原图</span><div class="shot"><img loading="lazy" src="assets/replica_sets/orig/电煮锅_ALT2PO_P3_S4_orig.jpg" alt="电煮锅 原图" class="il done"></div></figure>
-    <figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img loading="lazy" src="assets/replica_sets/电煮锅_ALT2PO_P3_S4.jpg" alt="电煮锅 复刻稿" class="il done"></div></figure>
-  </div>
-  <div class="set-cap">对比 / 安装</div>
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="零食 原图" loading="lazy" src="assets/replica_sets/orig/零食_ALTFO_P3_S4_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="零食 复刻稿" loading="lazy" src="assets/replica_sets/零食_ALTFO_P3_S4.jpg"/></div></figure>
+</div>
+<div class="set-cap">对比 / 安装</div>
+</div></div>
+</div><div class="set-block">
+<div class="set-head"><h3>电煮锅</h3><span>1 主图 + 4 附图</span></div>
+<div class="set-main"><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="电煮锅 原图" loading="lazy" src="assets/replica_sets/orig/电煮锅_ALT2PO_P3_M_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="电煮锅 复刻稿" loading="lazy" src="assets/replica_sets/电煮锅_ALT2PO_P3_M.jpg"/></div></figure>
+</div>
+<div class="set-cap">主图</div>
+</div></div>
+<div class="set-subs"><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="电煮锅 原图" loading="lazy" src="assets/replica_sets/orig/电煮锅_ALT2PO_P3_S_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="电煮锅 复刻稿" loading="lazy" src="assets/replica_sets/电煮锅_ALT2PO_P3_S.jpg"/></div></figure>
+</div>
+<div class="set-cap">卖点 / 场景</div>
+</div><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="电煮锅 原图" loading="lazy" src="assets/replica_sets/orig/电煮锅_ALT2PO_P3_S2_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="电煮锅 复刻稿" loading="lazy" src="assets/replica_sets/电煮锅_ALT2PO_P3_S2.jpg"/></div></figure>
+</div>
+<div class="set-cap">细节</div>
+</div><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="电煮锅 原图" loading="lazy" src="assets/replica_sets/orig/电煮锅_ALT2PO_P3_S3_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="电煮锅 复刻稿" loading="lazy" src="assets/replica_sets/电煮锅_ALT2PO_P3_S3.jpg"/></div></figure>
+</div>
+<div class="set-cap">参数</div>
+</div><div class="set-item">
+<div class="cmp-grid">
+<figure class="pane"><span class="tag orig">原图</span><div class="shot"><img alt="电煮锅 原图" loading="lazy" src="assets/replica_sets/orig/电煮锅_ALT2PO_P3_S4_orig.jpg"/></div></figure>
+<figure class="pane"><span class="tag gen">复刻稿</span><div class="shot"><img alt="电煮锅 复刻稿" loading="lazy" src="assets/replica_sets/电煮锅_ALT2PO_P3_S4.jpg"/></div></figure>
+</div>
+<div class="set-cap">对比 / 安装</div>
 </div></div>
 </div>
-<div class="nextbar"><a href="#crt"><span class="nl">下一节</span><span class="nt">版式 →</span></a></div></div></section>
-
+</div></section>
 <!-- ================= 03 创作图 ================= -->
 <section class="band" id="crt"><div class="wrap">
-  <div class="sec-head b rv in">
-    <div class="no">03 · 版式</div>
-    <h2>原创版式设计</h2>
-    <p class="sub">不依赖商品原图，从构图、色彩与文案三个维度建立可延展的视觉方向，同一品类输出六套独立版式。</p>
-  </div>
-
-  <div class="chips rv in">
-    <span class="chip acc"><b>6</b>套原创版式</span>
-    <span class="chip"><b>6</b>种视觉语言</span>
-    <span class="chip"><b>1024×1024</b>可直接上架</span>
-    <span class="chip"><b>文字</b>全部可改</span>
-  </div>
-
-  <div class="cgrid">
-    <div class="ctile wcard rv in">
-      <div class="shot"><img src="assets/create_1.jpg" alt="护眼台灯 场景叙事主图" class="il done"></div>
-      <div class="bd">
-        <div class="no">C1 · 场景叙事</div>
-        <div class="t">一束光，落在桌面</div>
-        <div class="d">满幅实景压住上半，标题沉到底部。这一版讲的是「光落到桌面的角度」，不是卖点词。</div>
-        <div class="tags"><span>护眼台灯</span><span>场景位</span><span>暖调</span></div>
-      </div>
-    </div>
-    <div class="ctile wcard rv in">
-      <div class="shot"><img src="assets/create_2.jpg" alt="橱柜灯 参数解构主图" class="il done"></div>
-      <div class="bd">
-        <div class="no">C2 · 参数解构</div>
-        <div class="t">柜下的一条光带</div>
-        <div class="d">深色底压住画面，用引线标注材质、结构与出光面，信息层级清晰。</div>
-        <div class="tags"><span>LED橱柜灯</span><span>标注式</span><span>信息设计</span></div>
-      </div>
-    </div>
-    <div class="ctile wcard rv in">
-      <div class="shot"><img src="assets/create_3.jpg" alt="球泡灯 极简留白主图" class="il done"></div>
-      <div class="bd">
-        <div class="no">C3 · 极简留白</div>
-        <div class="t">把光做成一个形状</div>
-        <div class="d">去除促销噪音，仅保留产品与核心文案，以留白建立视觉焦点。</div>
-        <div class="tags"><span>LED球泡灯</span><span>浅底</span><span>大标题</span></div>
-      </div>
-    </div>
-    <div class="ctile wcard rv in">
-      <div class="shot"><img src="assets/create_4.jpg" alt="吸顶灯 光影产品主图" class="il done"></div>
-      <div class="bd">
-        <div class="no">C4 · 光影产品</div>
-        <div class="t">超薄，也要有存在感</div>
-        <div class="d">薄型产品本身没有体积，用同心光环把空间撑起来，这是专为它定的一套画法。</div>
-        <div class="tags"><span>LED吸顶灯</span><span>暗底</span><span>光环</span></div>
-      </div>
-    </div>
-    <div class="ctile wcard rv in">
-      <div class="shot"><img src="assets/create_5.jpg" alt="射灯 拆解对照主图" class="il done"></div>
-      <div class="bd">
-        <div class="no">C5 · 拆解对照</div>
-        <div class="t">可调角度的射灯</div>
-        <div class="d">左侧呈现画面，右侧呈现参数表，用信息设计替代口号式表达。</div>
-        <div class="tags"><span>LED射灯</span><span>左右分栏</span><span>参数表</span></div>
-      </div>
-    </div>
-    <div class="ctile wcard rv in">
-      <div class="shot"><img src="assets/create_6.jpg" alt="LED灯带 品牌延展主图" class="il done"></div>
-      <div class="bd">
-        <div class="no">C6 · 品牌延展</div>
-        <div class="t">光是可以被设计的</div>
-        <div class="d">同一个产品换一种表达方式，就是另一张作品。这一版练的是把它当品牌资产而不是当商品图。</div>
-        <div class="tags"><span>LED灯带</span><span>标识</span><span>slogan</span></div>
-      </div>
-    </div>
-  </div>
-<div class="nextbar"><a href="#pf"><span class="nl">下一节</span><span class="nt">个人设计作品集 →</span></a></div></div></section>
-
+<div class="sec-head b">
+<div class="no">03 · 版式</div>
+<h2>原创版式设计</h2>
+<p class="sub">不依赖商品原图，从构图、色彩与文案三个维度建立可延展的视觉方向，同一品类输出六套独立版式。</p>
+</div>
+<div class="chips">
+<span class="chip acc"><b>6</b>套原创版式</span>
+<span class="chip"><b>6</b>种视觉语言</span>
+<span class="chip"><b>1024×1024</b>可直接上架</span>
+<span class="chip"><b>文字</b>全部可改</span>
+</div>
+<div class="cgrid">
+<div class="ctile wcard">
+<div class="shot"><img alt="护眼台灯 场景叙事主图" src="assets/create_1.jpg"/></div>
+<div class="bd">
+<div class="no">C1 · 场景叙事</div>
+<div class="t">一束光，落在桌面</div>
+<div class="d">满幅实景压住上半，标题沉到底部。这一版讲的是「光落到桌面的角度」，不是卖点词。</div>
+<div class="tags"><span>护眼台灯</span><span>场景位</span><span>暖调</span></div>
+</div>
+</div>
+<div class="ctile wcard">
+<div class="shot"><img alt="橱柜灯 参数解构主图" src="assets/create_2.jpg"/></div>
+<div class="bd">
+<div class="no">C2 · 参数解构</div>
+<div class="t">柜下的一条光带</div>
+<div class="d">深色底压住画面，用引线标注材质、结构与出光面，信息层级清晰。</div>
+<div class="tags"><span>LED橱柜灯</span><span>标注式</span><span>信息设计</span></div>
+</div>
+</div>
+<div class="ctile wcard">
+<div class="shot"><img alt="球泡灯 极简留白主图" src="assets/create_3.jpg"/></div>
+<div class="bd">
+<div class="no">C3 · 极简留白</div>
+<div class="t">把光做成一个形状</div>
+<div class="d">去除促销噪音，仅保留产品与核心文案，以留白建立视觉焦点。</div>
+<div class="tags"><span>LED球泡灯</span><span>浅底</span><span>大标题</span></div>
+</div>
+</div>
+<div class="ctile wcard">
+<div class="shot"><img alt="吸顶灯 光影产品主图" src="assets/create_4.jpg"/></div>
+<div class="bd">
+<div class="no">C4 · 光影产品</div>
+<div class="t">超薄，也要有存在感</div>
+<div class="d">薄型产品本身没有体积，用同心光环把空间撑起来，这是专为它定的一套画法。</div>
+<div class="tags"><span>LED吸顶灯</span><span>暗底</span><span>光环</span></div>
+</div>
+</div>
+<div class="ctile wcard">
+<div class="shot"><img alt="射灯 拆解对照主图" src="assets/create_5.jpg"/></div>
+<div class="bd">
+<div class="no">C5 · 拆解对照</div>
+<div class="t">可调角度的射灯</div>
+<div class="d">左侧呈现画面，右侧呈现参数表，用信息设计替代口号式表达。</div>
+<div class="tags"><span>LED射灯</span><span>左右分栏</span><span>参数表</span></div>
+</div>
+</div>
+<div class="ctile wcard">
+<div class="shot"><img alt="LED灯带 品牌延展主图" src="assets/create_6.jpg"/></div>
+<div class="bd">
+<div class="no">C6 · 品牌延展</div>
+<div class="t">光是可以被设计的</div>
+<div class="d">同一个产品换一种表达方式，就是另一张作品。这一版练的是把它当品牌资产而不是当商品图。</div>
+<div class="tags"><span>LED灯带</span><span>标识</span><span>slogan</span></div>
+</div>
+</div>
+</div>
+</div></section>
 <!-- ================= P3 个人作品集 ================= -->
-
-
 <!-- ================= 04 个人设计作品集 ================= -->
 <style>
 /* ---- 04 段：自主命题项目卡 + 全屏项目详情层 ---- */
@@ -1728,19 +1714,16 @@ window.__MOTION = (function () {
   .pjgo{color:#000!important}
 }
 </style>
-
 <section class="band dark" id="pf">
-  <canvas class="ocean" data-variant="band" data-rows="34" data-alpha=".8" data-color-a="#E8B44A" data-color-b="#3A2410" data-amp="1.2" data-horizon=".08" data-fill="1" data-glow="1.4" width="840" height="657"></canvas>
-  <div class="wrap">
-  <div class="sec-head c rv in" data-n="04">
-    <div class="no">04 · 个人设计作品集</div>
-    <h2>自主命题品牌项目与商业海报</h2>
-    <p class="sub">香水「南枝」11 页品牌手册、手表「观时」17 页品牌视觉系统，另有 6 张商业海报，其中 3 组为零售连锁促销海报。</p>
-  </div>
-
-  <div class="pjlist" id="pjlist"><button class="pjcard" type="button" data-pj="nanzhi"><div class="pjcover"><img src="assets/originals/nanzhi/01-封面.jpg" alt="香水 · 南枝" loading="lazy" class="il done" style="object-position: center 34%;"><div class="pjbadge">自主命题 · 品牌视觉系统</div></div><div class="pjbody"><h3>香水 · 南枝</h3><span class="en">PERFUME · NANZHI</span><p>自主命题香水品牌，涵盖命名、视觉调性、香调配比、材料表达与全套版式规则，11 页完整品牌手册。</p><div class="pjmeta"><span>11 页成品</span><span>长图 1200×17800</span><span>品牌手册</span></div><span class="pjgo">查看完整方案</span></div></button><button class="pjcard" type="button" data-pj="posters"><div class="pjcover"><img src="assets/originals/posters/POSTER-叙光.jpg" alt="商业海报" loading="lazy" class="il done" style="object-position: center 34%;"><div class="pjbadge">商业项目 · 6 件</div></div><div class="pjbody"><h3>商业海报</h3><span class="en">COMMERCIAL POSTER</span><p>灯带、厨电、零食的自主品牌海报，以及 711、全家、CIRCLE K 三组零售促销海报，每组含两个版式方案。</p><div class="pjmeta"><span>6 张成品</span><span>6 类商品</span><span>含双版式方案</span></div><span class="pjgo">查看完整方案</span></div></button><button class="pjcard" type="button" data-pj="guanzhi"><div class="pjcover"><img src="assets/originals/guanzhi/01-hero.jpg" alt="手表 · 观时" loading="lazy" class="il done" style="object-position: center 38%;"><div class="pjbadge">自主命题 · 品牌视觉系统</div></div><div class="pjbody"><h3>手表 · 观时</h3><span class="en">WATCH · GUĀNSHÍ</span><p>自主命题机械腕表品牌，涵盖定位、工艺表达与 17 页品牌视觉系统，并合成为一张连续长图。</p><div class="pjmeta"><span>17 页成品</span><span>长图 1200×25438</span><span>5 种页面类型</span></div><span class="pjgo">查看完整方案</span></div></button></div>
-  <div class="nextbar"><a href="#w1"><span class="nl">下一节</span><span class="nt">复刻与优化 →</span></a></div></div></section>
-
+<canvas class="ocean" data-alpha=".8" data-amp="1.2" data-color-a="#E8B44A" data-color-b="#3A2410" data-fill="1" data-glow="1.4" data-horizon=".08" data-rows="34" data-variant="band"></canvas>
+<div class="wrap">
+<div class="sec-head c" data-n="04">
+<div class="no">04 · 个人设计作品集</div>
+<h2>自主命题品牌项目与商业海报</h2>
+<p class="sub">香水「南枝」11 页品牌手册、手表「观时」17 页品牌视觉系统，另有 6 张商业海报，其中 3 组为零售连锁促销海报。</p>
+</div>
+<div class="pjlist" id="pjlist"></div>
+</div></section>
 <script>
 window.__PROJECTS = [
   {
@@ -1820,7 +1803,6 @@ window.__PROJECTS = [
   }
 ];
 </script>
-
 <script>
 (function () {
   var PROJ = window.__PROJECTS || [];
@@ -1971,499 +1953,452 @@ window.__PROJECTS = [
     if (ev.key === 'ArrowRight') step(1);
   });
 })();
-</script><div id="pjlayer"><div class="pjtop"><span class="pt-name"></span><span class="pt-page"></span><span class="pt-sp"></span><button class="pjbtn pjlong" type="button">长图</button><button class="pjbtn pjclose" type="button" aria-label="关闭">×</button></div><div class="pjbody2"><div class="pjthumbs"></div><div class="pjstage"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="il"></div><button class="pjnav prev" type="button" aria-label="上一页">‹</button><button class="pjnav next" type="button" aria-label="下一页">›</button><div class="pjbar"><span class="pjidx"></span></div></div></div>
-
-
+</script>
 <!-- ================= 打印用：项目实际页面展开 ================= -->
-<div id="pdfexp" class="pfexp"></div>
-
+<div class="pfexp" id="pdfexp"></div>
 <!-- ================= 作品 01 ================= -->
 <section class="band" id="w1"><div class="wrap">
-  <div class="sec-head c rv in" data-n="05">
-    <div class="no">05 · 复刻与优化</div>
-    <h2>版式拆解与迁移重建</h2>
-    <p class="sub">将主图拆解为照片、平面、美术字、文字四层，抽出可替换字段，再以自有产品完成一次重建验证。</p>
-  </div>
-
-  <div class="chips rv in">
-    <span class="chip acc"><b>4</b>层拆解 · 照片 / 平面 / 美术字 / 文字</span>
-    
-    <span class="chip"><b>1</b>份元素规格表（位置 / 颜色 / 字号 / 可否改字段）</span>
-    <span class="chip"><b>1</b>条命令换 SKU 重跑</span>
-  </div>
-
-  <div class="cmp2 rv in">
-      <figure class="pane"><span class="tag">方法 · 重建版式骨架</span><div class="shot sk-shot">
-      <svg class="sk" viewBox="0 0 464 626" role="img" aria-label="版式骨架图：将一张促销主图拆为照片层、平面层、美术字层、文字层四层结构，并标注各区占比">
-  <defs>
-    <pattern id="skHatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <line x1="0" y1="0" x2="0" y2="9" class="sk-hatch"></line>
-    </pattern>
-  </defs>
-
-  <rect class="sk-base" x="0" y="0" width="464" height="626" rx="5"></rect>
-
-  <!-- ④ 活字层：顶部条 0-6% -->
-  <rect class="sk-live" x="0" y="0" width="464" height="40" rx="5"></rect>
-  <rect class="sk-live-h" x="12" y="13" width="74" height="15" rx="3"></rect>
-  <rect class="sk-live-h" x="94" y="13" width="46" height="15" rx="3"></rect>
-  <rect class="sk-live-h" x="148" y="13" width="58" height="15" rx="3"></rect>
-  <rect class="sk-live-h" x="398" y="9" width="52" height="22" rx="4"></rect>
-  <g class="sk-badge" transform="translate(286,20)">
-    <circle r="9"></circle><text x="0" y="4" text-anchor="middle">4</text></g>
-  <text class="sk-pct" x="296" y="24">顶部条 0–6%</text>
-
-  <!-- ① 照片层：主视觉区 6–74% -->
-  <rect class="sk-photo" x="150" y="46" width="300" height="414" rx="3"></rect>
-  <g class="sk-badge" transform="translate(162,58)">
-    <circle r="9"></circle><text x="0" y="4" text-anchor="middle">1</text></g>
-  <text class="sk-pct" x="172" y="62">主体图 6–74%</text>
-
-  <!-- ③ 美术字层：主标题 19–34% -->
-  <rect class="sk-type" x="12" y="118" width="128" height="42" rx="3"></rect>
-  <rect class="sk-live-h" x="12" y="170" width="124" height="17" rx="3"></rect>
-  <rect class="sk-live-h" x="12" y="194" width="104" height="17" rx="3"></rect>
-  <g class="sk-badge" transform="translate(12,232)">
-    <circle r="9"></circle><text x="0" y="4" text-anchor="middle">3</text></g>
-  <text class="sk-pct" x="24" y="236">标题区 19–34%</text>
-
-  <!-- ④ 活字层：卖点胶囊 -->
-  <rect class="sk-live-h" x="12" y="250" width="112" height="25" rx="12"></rect>
-  <rect class="sk-live-h" x="12" y="282" width="96" height="25" rx="12"></rect>
-
-  <!-- ① 照片层：左下小图 -->
-  <rect class="sk-photo" x="12" y="318" width="112" height="102" rx="3"></rect>
-  <g class="sk-badge" transform="translate(136,326)">
-    <circle r="9"></circle><text x="0" y="4" text-anchor="middle">1</text></g>
-
-  <!-- ② 平面层：促销色带 74–83% -->
-  <rect class="sk-flat" x="0" y="462" width="464" height="56" rx="3"></rect>
-  <rect class="sk-flat-h" x="14" y="474" width="46" height="14" rx="2"></rect>
-  <rect class="sk-flat-h" x="66" y="474" width="132" height="14" rx="2"></rect>
-  <rect class="sk-flat-h" x="14" y="494" width="176" height="14" rx="2"></rect>
-  <g class="sk-badge" transform="translate(336,472)">
-    <circle r="9"></circle><text x="0" y="4" text-anchor="middle">2</text></g>
-  <text class="sk-pct" x="348" y="476">促销带 74–83%</text>
-
-  <!-- ② 平面层 + ④ 活字层：价格卡 83–100% -->
-  <rect class="sk-flat" x="0" y="522" width="464" height="104" rx="3"></rect>
-  <rect class="sk-flat-h" x="14" y="536" width="72" height="14" rx="2"></rect>
-  <rect class="sk-live-h" x="14" y="558" width="92" height="34" rx="3"></rect>
-  <rect class="sk-flat-h" x="118" y="558" width="26" height="34" rx="3"></rect>
-  <rect class="sk-flat-h" x="158" y="558" width="26" height="34" rx="3"></rect>
-  <rect class="sk-flat-h" x="198" y="558" width="26" height="34" rx="3"></rect>
-  <g class="sk-badge" transform="translate(332,532)">
-    <circle r="9"></circle><text x="0" y="4" text-anchor="middle">4</text></g>
-  <text class="sk-pct" x="344" y="536">价格卡 83–100%</text>
+<div class="sec-head c" data-n="05">
+<div class="no">05 · 复刻与优化</div>
+<h2>版式拆解与迁移重建</h2>
+<p class="sub">将主图拆解为照片、平面、美术字、文字四层，抽出可替换字段，再以自有产品完成一次重建验证。</p>
+</div>
+<div class="chips">
+<span class="chip acc"><b>4</b>层拆解 · 照片 / 平面 / 美术字 / 文字</span>
+<span class="chip"><b>1</b>份元素规格表（位置 / 颜色 / 字号 / 可否改字段）</span>
+<span class="chip"><b>1</b>条命令换 SKU 重跑</span>
+</div>
+<div class="cmp2">
+<figure class="pane"><span class="tag">方法 · 重建版式骨架</span><div class="shot sk-shot">
+<svg aria-label="版式骨架图：将一张促销主图拆为照片层、平面层、美术字层、文字层四层结构，并标注各区占比" class="sk" role="img" viewbox="0 0 464 626">
+<defs>
+<pattern height="9" id="skHatch" patterntransform="rotate(45)" patternunits="userSpaceOnUse" width="9">
+<line class="sk-hatch" x1="0" x2="0" y1="0" y2="9"></line>
+</pattern>
+</defs>
+<rect class="sk-base" height="626" rx="5" width="464" x="0" y="0"></rect>
+<!-- ④ 活字层：顶部条 0-6% -->
+<rect class="sk-live" height="40" rx="5" width="464" x="0" y="0"></rect>
+<rect class="sk-live-h" height="15" rx="3" width="74" x="12" y="13"></rect>
+<rect class="sk-live-h" height="15" rx="3" width="46" x="94" y="13"></rect>
+<rect class="sk-live-h" height="15" rx="3" width="58" x="148" y="13"></rect>
+<rect class="sk-live-h" height="22" rx="4" width="52" x="398" y="9"></rect>
+<g class="sk-badge" transform="translate(286,20)">
+<circle r="9"></circle><text text-anchor="middle" x="0" y="4">4</text></g>
+<text class="sk-pct" x="296" y="24">顶部条 0–6%</text>
+<!-- ① 照片层：主视觉区 6–74% -->
+<rect class="sk-photo" height="414" rx="3" width="300" x="150" y="46"></rect>
+<g class="sk-badge" transform="translate(162,58)">
+<circle r="9"></circle><text text-anchor="middle" x="0" y="4">1</text></g>
+<text class="sk-pct" x="172" y="62">主体图 6–74%</text>
+<!-- ③ 美术字层：主标题 19–34% -->
+<rect class="sk-type" height="42" rx="3" width="128" x="12" y="118"></rect>
+<rect class="sk-live-h" height="17" rx="3" width="124" x="12" y="170"></rect>
+<rect class="sk-live-h" height="17" rx="3" width="104" x="12" y="194"></rect>
+<g class="sk-badge" transform="translate(12,232)">
+<circle r="9"></circle><text text-anchor="middle" x="0" y="4">3</text></g>
+<text class="sk-pct" x="24" y="236">标题区 19–34%</text>
+<!-- ④ 活字层：卖点胶囊 -->
+<rect class="sk-live-h" height="25" rx="12" width="112" x="12" y="250"></rect>
+<rect class="sk-live-h" height="25" rx="12" width="96" x="12" y="282"></rect>
+<!-- ① 照片层：左下小图 -->
+<rect class="sk-photo" height="102" rx="3" width="112" x="12" y="318"></rect>
+<g class="sk-badge" transform="translate(136,326)">
+<circle r="9"></circle><text text-anchor="middle" x="0" y="4">1</text></g>
+<!-- ② 平面层：促销色带 74–83% -->
+<rect class="sk-flat" height="56" rx="3" width="464" x="0" y="462"></rect>
+<rect class="sk-flat-h" height="14" rx="2" width="46" x="14" y="474"></rect>
+<rect class="sk-flat-h" height="14" rx="2" width="132" x="66" y="474"></rect>
+<rect class="sk-flat-h" height="14" rx="2" width="176" x="14" y="494"></rect>
+<g class="sk-badge" transform="translate(336,472)">
+<circle r="9"></circle><text text-anchor="middle" x="0" y="4">2</text></g>
+<text class="sk-pct" x="348" y="476">促销带 74–83%</text>
+<!-- ② 平面层 + ④ 活字层：价格卡 83–100% -->
+<rect class="sk-flat" height="104" rx="3" width="464" x="0" y="522"></rect>
+<rect class="sk-flat-h" height="14" rx="2" width="72" x="14" y="536"></rect>
+<rect class="sk-live-h" height="34" rx="3" width="92" x="14" y="558"></rect>
+<rect class="sk-flat-h" height="34" rx="3" width="26" x="118" y="558"></rect>
+<rect class="sk-flat-h" height="34" rx="3" width="26" x="158" y="558"></rect>
+<rect class="sk-flat-h" height="34" rx="3" width="26" x="198" y="558"></rect>
+<g class="sk-badge" transform="translate(332,532)">
+<circle r="9"></circle><text text-anchor="middle" x="0" y="4">4</text></g>
+<text class="sk-pct" x="344" y="536">价格卡 83–100%</text>
 </svg>
-    </div></figure>
-    <figure class="pane"><span class="tag gen">交付物 · 自有产品原创稿</span><div class="shot">
-      <img src="assets/led_hero.jpg" alt="LED COB 硅胶灯带促销主图，自有产品原创稿" class="il done"></div>
-      <figcaption class="pjcap">左侧为依据拆解结果重建的<b>版式骨架</b>：将促销主图拆为四层，标注各层职责、占比与可编辑范围。右侧为同一方法应用于自有产品后的<b>原创交付稿</b>。</figcaption>
-    </figure>
-  </div>
-  <div class="sk-key">
-  <div class="skk skk-1"><b>1</b><span>照片层</span><i>产品抠图后向外扩展 12px 光晕，边缘不残留背景色</i></div>
-  <div class="skk skk-2"><b>2</b><span>平面层</span><i>色块与渐变以 CSS 绘制，促销色仅用于金额</i></div>
-  <div class="skk skk-3"><b>3</b><span>美术字层</span><i>3D 字体与书法字抠为带透明通道的 PNG，不以近似字体替代</i></div>
-  <div class="skk skk-4"><b>4</b><span>文字层</span><i>全部文字采用 SVG text，价格／活动／型号保留为字段</i></div>
+</div></figure>
+<figure class="pane"><span class="tag gen">交付物 · 自有产品原创稿</span><div class="shot">
+<img alt="LED COB 硅胶灯带促销主图，自有产品原创稿" src="assets/led_hero.jpg"/></div>
+<figcaption class="pjcap">左侧为依据拆解结果重建的<b>版式骨架</b>：将促销主图拆为四层，标注各层职责、占比与可编辑范围。右侧为同一方法应用于自有产品后的<b>原创交付稿</b>。</figcaption>
+</figure>
+</div>
+<div class="sk-key">
+<div class="skk skk-1"><b>1</b><span>照片层</span><i>产品抠图后向外扩展 12px 光晕，边缘不残留背景色</i></div>
+<div class="skk skk-2"><b>2</b><span>平面层</span><i>色块与渐变以 CSS 绘制，促销色仅用于金额</i></div>
+<div class="skk skk-3"><b>3</b><span>美术字层</span><i>3D 字体与书法字抠为带透明通道的 PNG，不以近似字体替代</i></div>
+<div class="skk skk-4"><b>4</b><span>文字层</span><i>全部文字采用 SVG text，价格／活动／型号保留为字段</i></div>
+</div>
+<div class="rules">
+<div class="rule icard"><div class="no">LAYER 1</div><h4>照片层</h4>
+<p>产品照片不重画，直接抠图搬过来，只抹掉要重排的标题。</p>
+<div class="rk"><b>拆解结论</b>产品不重绘。抠图后向外补 12px 光晕，边缘不吃背景色。</div>
+<div class="tip">照片层可原样迁移</div>
+<div class="use"><b>应用于自有产品</b>白底实拍直接作底图，仅补暖光晕。</div>
+</div>
+<div class="rule icard"><div class="no">LAYER 2</div><h4>平面层</h4>
+<p>色块和渐变用 CSS 画，底部渐变从原图反推，大白字抠掉后拟合回填。</p>
+<div class="rk"><b>拆解结论</b>促销色只给金额，其余走中性色板，价格位永远留空。</div>
+<div class="tip">色板可按原图复现</div>
+<div class="use"><b>应用于自有产品</b>替换为自有暖金色板，价格位仍保留在文字层。</div>
+</div>
+<div class="rule icard"><div class="no">LAYER 3</div><h4>3D 美术字层</h4>
+<p>书法字、徽章、logo 无开源字体等价物，按背景色抠成带 alpha 的 PNG。</p>
+<div class="rk"><b>拆解结论</b>美术字不找近似字体——找到了也一定不像，直接抠。</div>
+<div class="tip">美术字可直接抠取</div>
+<div class="use"><b>应用于自有产品</b>抠取自有标题美术字，沿用同一套抠图方法。</div>
+</div>
+<div class="rule icard"><div class="no">LAYER 4</div><h4>文字层</h4>
+<p>文字全部采用 SVG text，y 为基线，textLength 锁定字宽。</p>
+<div class="rk"><b>拆解结论</b>文字必须可编辑，价格、活动、型号保留为字段，不并入图像。</div>
+<div class="tip">文字宽度与原图一致</div>
+<div class="use"><b>应用于自有产品</b>换货仅替换字段与色值，不重排版式。</div>
+</div>
 </div>
 
-
-  <div class="rules">
-    <div class="rule icard rv in"><div class="no">LAYER 1</div><h4>照片层</h4>
-      <p>产品照片不重画，直接抠图搬过来，只抹掉要重排的标题。</p>
-      <div class="rk"><b>拆解结论</b>产品不重绘。抠图后向外补 12px 光晕，边缘不吃背景色。</div>
-      <div class="tip">照片层可原样迁移</div>
-      <div class="use"><b>应用于自有产品</b>白底实拍直接作底图，仅补暖光晕。</div>
-    </div>
-    <div class="rule icard rv in"><div class="no">LAYER 2</div><h4>平面层</h4>
-      <p>色块和渐变用 CSS 画，底部渐变从原图反推，大白字抠掉后拟合回填。</p>
-      <div class="rk"><b>拆解结论</b>促销色只给金额，其余走中性色板，价格位永远留空。</div>
-      <div class="tip">色板可按原图复现</div>
-      <div class="use"><b>应用于自有产品</b>替换为自有暖金色板，价格位仍保留在文字层。</div>
-    </div>
-    <div class="rule icard rv in"><div class="no">LAYER 3</div><h4>3D 美术字层</h4>
-      <p>书法字、徽章、logo 无开源字体等价物，按背景色抠成带 alpha 的 PNG。</p>
-      <div class="rk"><b>拆解结论</b>美术字不找近似字体——找到了也一定不像，直接抠。</div>
-      <div class="tip">美术字可直接抠取</div>
-      <div class="use"><b>应用于自有产品</b>抠取自有标题美术字，沿用同一套抠图方法。</div>
-    </div>
-    <div class="rule icard rv in"><div class="no">LAYER 4</div><h4>文字层</h4>
-      <p>文字全部采用 SVG text，y 为基线，textLength 锁定字宽。</p>
-      <div class="rk"><b>拆解结论</b>文字必须可编辑，价格、活动、型号保留为字段，不并入图像。</div>
-      <div class="tip">文字宽度与原图一致</div>
-      <div class="use"><b>应用于自有产品</b>换货仅替换字段与色值，不重排版式。</div>
-    </div>
-  </div>
-
-  
-<div class="nextbar"><a href="#w2"><span class="nl">下一节</span><span class="nt">原创主图 →</span></a></div></div></section>
-
+</div></section>
 <!-- ================= 作品 02 ================= -->
 <section class="band alt" id="w2"><div class="wrap">
-  <div class="sec-head a rv in">
-    <div class="no">06 · 原创主图</div>
-    <h2>自有产品主图设计</h2>
-    <p class="sub">以自有 LED 硅胶灯带构建促销版式，覆盖平台主图核心信息位，800×800 平台直出。</p>
-  </div>
-
-  <div class="chips rv in">
-    <span class="chip"><b>800×800</b>平台直出尺寸</span>
-    <span class="chip"><b>1x + 2x</b>双规格交付</span>
-    <span class="chip"><b>4</b>份可复用资产</span>
-    <span class="chip"><b>0</b>处编造的产品信息</span>
-  </div>
-
-  <div class="g2">
-    <figure class="fig rv in"><img src="assets/led_800.jpg" alt="LED 促销型主图成品 800×800" class="il done"><figcaption class="cap">成品 800×800（1x 平台直出）· 暗场暖光</figcaption></figure>
-    <div>
-      <figure class="fig rv in"><img src="assets/led_cutout.jpg" alt="抠图结果" class="il done"><figcaption class="cap">起点：即梦白底图 → 抠图（棋盘格＝透明）</figcaption></figure>
-      <div class="fig spec-card rv in">
-        <div class="cap">交付规格</div>
-        <div class="spec-row"><b>1x</b><span>800×800，平台直出尺寸</span></div>
-        <div class="spec-row"><b>2x</b><span>1600×1600 源文件随交付</span></div>
-        <div class="spec-row"><b>可编辑</b><span>改价、改活动、换图均在源件内完成</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="rules">
-    <div class="rule icard rv in"><div class="no">RULE 1</div><h4>让产品自己成为光源</h4><p>自发光产品白底拍出来，发光感就消失了，必须暗场。</p><div class="tip">缩到 200px 宽仍看得出在发光</div></div>
-    <div class="rule icard rv in"><div class="no">RULE 2</div><h4>色温即钥匙</h4><p>暖色产品配中性白底＝背景残留；冷色产品同理。抠图按这个判。</p><div class="tip">只在轮廓外 12px 环带内清理</div></div>
-    <div class="rule icard rv in"><div class="no">RULE 3</div><h4>深底文字必须描边</h4><p>标题采用金色渐变加深色描边外扩，小字不加描边以保证清晰度。</p><div class="tip">stroke + paint-order</div></div>
-    <div class="rule icard rv in"><div class="no">RULE 4</div><h4>促销色只给金额</h4><p>全图 4 色 + 1 强调色，黄色只出现在价格上。</p><div class="tip">强调色超过 3 种将削弱层级</div></div>
-  </div>
-
-  <details>
-    <summary>展开版式骨架与交付说明</summary>
-    <div class="dbody">
-      <div class="flow rv in">
-        <span class="s"><u>0</u>3px 暖色高光线</span><span class="ar">›</span>
-        <span class="s"><u>1</u>品牌位</span><span class="ar">›</span>
-        <span class="s"><u>2</u>角标位</span><span class="ar">›</span>
-        <span class="s"><u>3</u>主标题 56px 金色渐变</span><span class="ar">›</span>
-        <span class="s"><u>4</u>卖点胶囊 ×2</span><span class="ar">›</span>
-        <span class="s"><u>5</u>产品占宽 59%</span><span class="ar">›</span>
-        <span class="s"><u>6</u>活动横幅 26px</span><span class="ar">›</span>
-        <span class="s"><u>7</u>价格条 + 规格标 ×3</span>
-      </div>
-      <p class="note">
-        <b>顺带产出 4 份可复用资产：</b>可编辑源件 index.html（改价改活动换图都在这里）、底图提示词（暗场补光，含负面词与 8 条评审项）、《暗场自发光产品主图设计原则》入库、抠图脚本（GrabCut + 环带清理 + 底缘暖化）。
+<div class="sec-head a">
+<div class="no">06 · 原创主图</div>
+<h2>自有产品主图设计</h2>
+<p class="sub">以自有 LED 硅胶灯带构建促销版式，覆盖平台主图核心信息位，800×800 平台直出。</p>
+</div>
+<div class="chips">
+<span class="chip"><b>800×800</b>平台直出尺寸</span>
+<span class="chip"><b>1x + 2x</b>双规格交付</span>
+<span class="chip"><b>4</b>份可复用资产</span>
+<span class="chip"><b>0</b>处编造的产品信息</span>
+</div>
+<div class="g2">
+<figure class="fig"><img alt="LED 促销型主图成品 800×800" src="assets/led_800.jpg"/><figcaption class="cap">成品 800×800（1x 平台直出）· 暗场暖光</figcaption></figure>
+<div>
+<figure class="fig"><img alt="抠图结果" src="assets/led_cutout.jpg"/><figcaption class="cap">起点：即梦白底图 → 抠图（棋盘格＝透明）</figcaption></figure>
+<div class="fig spec-card">
+<div class="cap">交付规格</div>
+<div class="spec-row"><b>1x</b><span>800×800，平台直出尺寸</span></div>
+<div class="spec-row"><b>2x</b><span>1600×1600 源文件随交付</span></div>
+<div class="spec-row"><b>可编辑</b><span>改价、改活动、换图均在源件内完成</span></div>
+</div>
+</div>
+</div>
+<div class="rules">
+<div class="rule icard"><div class="no">RULE 1</div><h4>让产品自己成为光源</h4><p>自发光产品白底拍出来，发光感就消失了，必须暗场。</p><div class="tip">缩到 200px 宽仍看得出在发光</div></div>
+<div class="rule icard"><div class="no">RULE 2</div><h4>色温即钥匙</h4><p>暖色产品配中性白底＝背景残留；冷色产品同理。抠图按这个判。</p><div class="tip">只在轮廓外 12px 环带内清理</div></div>
+<div class="rule icard"><div class="no">RULE 3</div><h4>深底文字必须描边</h4><p>标题采用金色渐变加深色描边外扩，小字不加描边以保证清晰度。</p><div class="tip">stroke + paint-order</div></div>
+<div class="rule icard"><div class="no">RULE 4</div><h4>促销色只给金额</h4><p>全图 4 色 + 1 强调色，黄色只出现在价格上。</p><div class="tip">强调色超过 3 种将削弱层级</div></div>
+</div>
+<details>
+<summary>展开版式骨架与交付说明</summary>
+<div class="dbody">
+<div class="flow">
+<span class="s"><u>0</u>3px 暖色高光线</span><span class="ar">›</span>
+<span class="s"><u>1</u>品牌位</span><span class="ar">›</span>
+<span class="s"><u>2</u>角标位</span><span class="ar">›</span>
+<span class="s"><u>3</u>主标题 56px 金色渐变</span><span class="ar">›</span>
+<span class="s"><u>4</u>卖点胶囊 ×2</span><span class="ar">›</span>
+<span class="s"><u>5</u>产品占宽 59%</span><span class="ar">›</span>
+<span class="s"><u>6</u>活动横幅 26px</span><span class="ar">›</span>
+<span class="s"><u>7</u>价格条 + 规格标 ×3</span>
+</div>
+<p class="note">
+<b>顺带产出 4 份可复用资产：</b>可编辑源件 index.html（改价改活动换图都在这里）、底图提示词（暗场补光，含负面词与 8 条评审项）、《暗场自发光产品主图设计原则》入库、抠图脚本（GrabCut + 环带清理 + 底缘暖化）。
         <span class="sep"><b>图像中的产品描述均来自原图</b>（COB 连续均匀发光 / 硅胶 / 立式线轴 / 双面 PCB / 暖白）。<b>价格、品牌、活动与角标 4 处未作虚构</b>，均设置为明确的占位字段，并附「填写内容与依据」清单。</span>
-      </p>
-    </div>
-  </details>
-<div class="nextbar"><a href="#w3"><span class="nl">下一节</span><span class="nt">批量套图 →</span></a></div></div></section>
-
+</p>
+</div>
+</details>
+</div></section>
 <!-- ================= 作品 03 ================= -->
 <section class="band" id="w3"><div class="wrap">
-  <div class="sec-head c rv in" data-n="07">
-    <div class="no">07 · 批量套图</div>
-    <h2>多品类套图批量输出</h2>
-    <p class="sub">同一份数据表驱动全部图位与照明品类，逐张校验后交付。</p>
-  </div>
-
-  <div class="chips rv in">
-    <span class="chip acc"><b>42</b>张全量通过校验</span>
-    <span class="chip acc"><b>24</b>张精选入册</span>
-    
-    <span class="chip"><b>11</b>张不合格被拦下重做</span>
-    <span class="chip"><b>1</b>份数据表驱动全部图位</span>
-  </div>
-
-  <div class="wallhead rv in">
-    <span class="wt">精选 24 张 · 点任意一张放大</span>
-    <span class="wl">深底＝卖点战场　白底＝产品展示位　附图按参数 / 安装 / 对比 / 细节分版</span>
-  </div>
-  <div class="wall rv in">
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t01.jpg" data-full="assets/wall42/01.jpg" alt="吸顶灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">吸顶灯 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t02.jpg" data-full="assets/wall42/02.jpg" alt="吸顶灯 · 白底主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">吸顶灯 · 白底主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t03.jpg" data-full="assets/wall42/03.jpg" alt="吸顶灯 · 参数附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">吸顶灯 · 参数附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t05.jpg" data-full="assets/wall42/05.jpg" alt="吸顶灯 · 对比附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">吸顶灯 · 对比附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t07.jpg" data-full="assets/wall42/07.jpg" alt="射灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">射灯 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t08.jpg" data-full="assets/wall42/08.jpg" alt="射灯 · 白底主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">射灯 · 白底主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t09.jpg" data-full="assets/wall42/09.jpg" alt="射灯 · 参数附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">射灯 · 参数附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t13.jpg" data-full="assets/wall42/13.jpg" alt="护眼台灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">护眼台灯 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t14.jpg" data-full="assets/wall42/14.jpg" alt="护眼台灯 · 白底主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">护眼台灯 · 白底主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t16.jpg" data-full="assets/wall42/16.jpg" alt="护眼台灯 · 安装附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">护眼台灯 · 安装附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t17.jpg" data-full="assets/wall42/17.jpg" alt="护眼台灯 · 对比附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">护眼台灯 · 对比附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t18.jpg" data-full="assets/wall42/18.jpg" alt="护眼台灯 · 细节附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">护眼台灯 · 细节附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t19.jpg" data-full="assets/wall42/19.jpg" alt="橱柜灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">橱柜灯 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t20.jpg" data-full="assets/wall42/20.jpg" alt="橱柜灯 · 白底主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">橱柜灯 · 白底主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t21.jpg" data-full="assets/wall42/21.jpg" alt="橱柜灯 · 参数附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">橱柜灯 · 参数附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t23.jpg" data-full="assets/wall42/23.jpg" alt="橱柜灯 · 对比附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">橱柜灯 · 对比附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t24.jpg" data-full="assets/wall42/24.jpg" alt="橱柜灯 · 细节附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">橱柜灯 · 细节附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t25.jpg" data-full="assets/wall42/25.jpg" alt="灯带 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">灯带 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t26.jpg" data-full="assets/wall42/26.jpg" alt="灯带 · 白底主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">灯带 · 白底主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t28.jpg" data-full="assets/wall42/28.jpg" alt="灯带 · 安装附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">灯带 · 安装附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t30.jpg" data-full="assets/wall42/30.jpg" alt="灯带 · 细节附图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">灯带 · 细节附图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t31.jpg" data-full="assets/wall42/31.jpg" alt="球泡灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">球泡灯 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t32.jpg" data-full="assets/wall42/32.jpg" alt="球泡灯 · 白底主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">球泡灯 · 白底主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t37.jpg" data-full="assets/wall42/37.jpg" alt="筒灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">筒灯 · 场景主图</figcaption></figure>
-  </div>
-
-  <div class="flow rv in">
-    <span class="s"><u>1</u>数据层</span><span class="ar">›</span>
-    <span class="s"><u>2</u>模板层</span><span class="ar">›</span>
-    <span class="s"><u>3</u>形态层</span><span class="ar">›</span>
-    <span class="s"><u>4</u>校验层</span><span class="ar">›</span>
-    <span class="s"><u>5</u>落位层</span>
-  </div>
-
-  <details>
-    <summary>展开四条踩坑规则</summary>
-    <div class="dbody">
-      <div class="rules" style="margin-bottom:18px">
-        <div class="rule icard rv in"><div class="no">RULE 1</div><h4>绑定必须用键</h4><p>最早用「数组下标＝文件名里品类首次出现顺序」绑文案。品类表一换，7 个品类里 5 个张冠李戴，脚本只比长度不比名字，静默错位。</p><div class="tip">键＝品类名＋键＝图位，错字直接报错退出</div></div>
-        <div class="rule icard rv in"><div class="no">RULE 2</div><h4>形态要钉死</h4><p>提示词写「条形橱柜灯」，生成器照样画成圆形吸顶灯。靠形容词压不住，得把形态和场景当锚点拼进去。</p><div class="tip">换品类只加一条，不改模板</div></div>
-        <div class="rule icard rv in"><div class="no">RULE 3</div><h4>落位靠测量</h4><p>白底图标题区 + 底部条占掉 55% 画布，高瘦产品怎么摆都会被压到灯头或螺口。</p><div class="tip">逐行建模量背景，不目测</div></div>
-    <div class="rule icard rv in"><div class="no">RULE 4</div><h4>坏底图不硬上</h4><p>逐张审全部底图，抓出 2 张货不对板、9 张带 AI 乱码、2 张产品占比不达标，全部退回重出。</p><div class="tip">判据是代码不是眼睛</div></div>
-      </div>
-      <p class="note">
-        <b>价格、品牌、活动、角标与灯带长度 5 处未作虚构</b>，均设置为占位字段，并附填写清单。BRAND.yaml 中的 5M/16.4FT 为示例值而非实测值，因此灯带长度保持留空。源件包提供唯一编辑入口 index.html：浏览器内改价、改文案、实时预览，并一键导出 slots.json。
+<div class="sec-head c" data-n="07">
+<div class="no">07 · 批量套图</div>
+<h2>多品类套图批量输出</h2>
+<p class="sub">同一份数据表驱动全部图位与照明品类，逐张校验后交付。</p>
+</div>
+<div class="chips">
+<span class="chip acc"><b>42</b>张全量通过校验</span>
+<span class="chip acc"><b>24</b>张精选入册</span>
+<span class="chip"><b>11</b>张不合格被拦下重做</span>
+<span class="chip"><b>1</b>份数据表驱动全部图位</span>
+</div>
+<div class="wallhead">
+<span class="wt">精选 24 张 · 点任意一张放大</span>
+<span class="wl">深底＝卖点战场　白底＝产品展示位　附图按参数 / 安装 / 对比 / 细节分版</span>
+</div>
+<div class="wall">
+<figure class="wtile"><div class="shot"><img alt="吸顶灯 · 场景主图" data-full="assets/wall42/01.jpg" decoding="async" loading="lazy" src="assets/wall42/t01.jpg"/></div><figcaption class="cap">吸顶灯 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="吸顶灯 · 白底主图" data-full="assets/wall42/02.jpg" decoding="async" loading="lazy" src="assets/wall42/t02.jpg"/></div><figcaption class="cap">吸顶灯 · 白底主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="吸顶灯 · 参数附图" data-full="assets/wall42/03.jpg" decoding="async" loading="lazy" src="assets/wall42/t03.jpg"/></div><figcaption class="cap">吸顶灯 · 参数附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="吸顶灯 · 对比附图" data-full="assets/wall42/05.jpg" decoding="async" loading="lazy" src="assets/wall42/t05.jpg"/></div><figcaption class="cap">吸顶灯 · 对比附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="射灯 · 场景主图" data-full="assets/wall42/07.jpg" decoding="async" loading="lazy" src="assets/wall42/t07.jpg"/></div><figcaption class="cap">射灯 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="射灯 · 白底主图" data-full="assets/wall42/08.jpg" decoding="async" loading="lazy" src="assets/wall42/t08.jpg"/></div><figcaption class="cap">射灯 · 白底主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="射灯 · 参数附图" data-full="assets/wall42/09.jpg" decoding="async" loading="lazy" src="assets/wall42/t09.jpg"/></div><figcaption class="cap">射灯 · 参数附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="护眼台灯 · 场景主图" data-full="assets/wall42/13.jpg" decoding="async" loading="lazy" src="assets/wall42/t13.jpg"/></div><figcaption class="cap">护眼台灯 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="护眼台灯 · 白底主图" data-full="assets/wall42/14.jpg" decoding="async" loading="lazy" src="assets/wall42/t14.jpg"/></div><figcaption class="cap">护眼台灯 · 白底主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="护眼台灯 · 安装附图" data-full="assets/wall42/16.jpg" decoding="async" loading="lazy" src="assets/wall42/t16.jpg"/></div><figcaption class="cap">护眼台灯 · 安装附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="护眼台灯 · 对比附图" data-full="assets/wall42/17.jpg" decoding="async" loading="lazy" src="assets/wall42/t17.jpg"/></div><figcaption class="cap">护眼台灯 · 对比附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="护眼台灯 · 细节附图" data-full="assets/wall42/18.jpg" decoding="async" loading="lazy" src="assets/wall42/t18.jpg"/></div><figcaption class="cap">护眼台灯 · 细节附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="橱柜灯 · 场景主图" data-full="assets/wall42/19.jpg" decoding="async" loading="lazy" src="assets/wall42/t19.jpg"/></div><figcaption class="cap">橱柜灯 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="橱柜灯 · 白底主图" data-full="assets/wall42/20.jpg" decoding="async" loading="lazy" src="assets/wall42/t20.jpg"/></div><figcaption class="cap">橱柜灯 · 白底主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="橱柜灯 · 参数附图" data-full="assets/wall42/21.jpg" decoding="async" loading="lazy" src="assets/wall42/t21.jpg"/></div><figcaption class="cap">橱柜灯 · 参数附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="橱柜灯 · 对比附图" data-full="assets/wall42/23.jpg" decoding="async" loading="lazy" src="assets/wall42/t23.jpg"/></div><figcaption class="cap">橱柜灯 · 对比附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="橱柜灯 · 细节附图" data-full="assets/wall42/24.jpg" decoding="async" loading="lazy" src="assets/wall42/t24.jpg"/></div><figcaption class="cap">橱柜灯 · 细节附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="灯带 · 场景主图" data-full="assets/wall42/25.jpg" decoding="async" loading="lazy" src="assets/wall42/t25.jpg"/></div><figcaption class="cap">灯带 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="灯带 · 白底主图" data-full="assets/wall42/26.jpg" decoding="async" loading="lazy" src="assets/wall42/t26.jpg"/></div><figcaption class="cap">灯带 · 白底主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="灯带 · 安装附图" data-full="assets/wall42/28.jpg" decoding="async" loading="lazy" src="assets/wall42/t28.jpg"/></div><figcaption class="cap">灯带 · 安装附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="灯带 · 细节附图" data-full="assets/wall42/30.jpg" decoding="async" loading="lazy" src="assets/wall42/t30.jpg"/></div><figcaption class="cap">灯带 · 细节附图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="球泡灯 · 场景主图" data-full="assets/wall42/31.jpg" decoding="async" loading="lazy" src="assets/wall42/t31.jpg"/></div><figcaption class="cap">球泡灯 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="球泡灯 · 白底主图" data-full="assets/wall42/32.jpg" decoding="async" loading="lazy" src="assets/wall42/t32.jpg"/></div><figcaption class="cap">球泡灯 · 白底主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="筒灯 · 场景主图" data-full="assets/wall42/37.jpg" decoding="async" loading="lazy" src="assets/wall42/t37.jpg"/></div><figcaption class="cap">筒灯 · 场景主图</figcaption></figure>
+</div>
+<div class="flow">
+<span class="s"><u>1</u>数据层</span><span class="ar">›</span>
+<span class="s"><u>2</u>模板层</span><span class="ar">›</span>
+<span class="s"><u>3</u>形态层</span><span class="ar">›</span>
+<span class="s"><u>4</u>校验层</span><span class="ar">›</span>
+<span class="s"><u>5</u>落位层</span>
+</div>
+<details>
+<summary>展开四条踩坑规则</summary>
+<div class="dbody">
+<div class="rules" style="margin-bottom:18px">
+<div class="rule icard"><div class="no">RULE 1</div><h4>绑定必须用键</h4><p>最早用「数组下标＝文件名里品类首次出现顺序」绑文案。品类表一换，7 个品类里 5 个张冠李戴，脚本只比长度不比名字，静默错位。</p><div class="tip">键＝品类名＋键＝图位，错字直接报错退出</div></div>
+<div class="rule icard"><div class="no">RULE 2</div><h4>形态要钉死</h4><p>提示词写「条形橱柜灯」，生成器照样画成圆形吸顶灯。靠形容词压不住，得把形态和场景当锚点拼进去。</p><div class="tip">换品类只加一条，不改模板</div></div>
+<div class="rule icard"><div class="no">RULE 3</div><h4>落位靠测量</h4><p>白底图标题区 + 底部条占掉 55% 画布，高瘦产品怎么摆都会被压到灯头或螺口。</p><div class="tip">逐行建模量背景，不目测</div></div>
+<div class="rule icard"><div class="no">RULE 4</div><h4>坏底图不硬上</h4><p>逐张审全部底图，抓出 2 张货不对板、9 张带 AI 乱码、2 张产品占比不达标，全部退回重出。</p><div class="tip">判据是代码不是眼睛</div></div>
+</div>
+<p class="note">
+<b>价格、品牌、活动、角标与灯带长度 5 处未作虚构</b>，均设置为占位字段，并附填写清单。BRAND.yaml 中的 5M/16.4FT 为示例值而非实测值，因此灯带长度保持留空。源件包提供唯一编辑入口 index.html：浏览器内改价、改文案、实时预览，并一键导出 slots.json。
       </p>
-    </div>
-  </details>
-<div class="nextbar"><a href="#w4"><span class="nl">下一节</span><span class="nt">流水线实测 →</span></a></div></div></section>
-
+</div>
+</details>
+</div></section>
 <!-- ================= 作品 04 ================= -->
 <section class="band alt" id="w4"><div class="wrap">
-  <div class="sec-head c rv in" data-n="08">
-    <div class="no">08 · 流水线实测</div>
-    <h2>版式流水线可复现验证</h2>
-    <p class="sub">六张参考图抽象为三套版式体系，按真实画布比例输出，文字全部可改，交付两种版本。</p>
-  </div>
-
-  <div class="chips rv in">
-    <span class="chip acc"><b>6</b>张参考图</span>
-    <span class="chip"><b>3</b>套版式体系</span>
-    <span class="chip"><b>2</b>种交付版本</span>
-    <span class="chip"><b>1</b>条命令完成</span>
-  </div>
-
-  <figure class="fig sk6fig rv in">
-    <div class="sk6scroll"><svg class="sk sk6" viewBox="0 0 1123 296" role="img" aria-label="六张参考图被抽象成三套版式体系：A 淘宝促销、B 黑金高端、C 杂志风，每张画布按真实比例缩放">
-<defs><pattern id="skHatch6" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" class="sk6-hatch"></line></pattern></defs>
+<div class="sec-head c" data-n="08">
+<div class="no">08 · 流水线实测</div>
+<h2>版式流水线可复现验证</h2>
+<p class="sub">六张参考图抽象为三套版式体系，按真实画布比例输出，文字全部可改，交付两种版本。</p>
+</div>
+<div class="chips">
+<span class="chip acc"><b>6</b>张参考图</span>
+<span class="chip"><b>3</b>套版式体系</span>
+<span class="chip"><b>2</b>种交付版本</span>
+<span class="chip"><b>1</b>条命令完成</span>
+</div>
+<figure class="fig sk6fig">
+<div class="sk6scroll"><svg aria-label="六张参考图被抽象成三套版式体系：A 淘宝促销、B 黑金高端、C 杂志风，每张画布按真实比例缩放" class="sk sk6" role="img" viewbox="0 0 1123 296">
+<defs><pattern height="9" id="skHatch6" patterntransform="rotate(45)" patternunits="userSpaceOnUse" width="9"><line class="sk6-hatch" x1="0" x2="0" y1="0" y2="9"></line></pattern></defs>
 <g transform="translate(24.0,0)">
-<rect class="sk6-tag-a" x="0" y="0" width="22" height="22" rx="6"></rect>
+<rect class="sk6-tag-a" height="22" rx="6" width="22" x="0" y="0"></rect>
 <text class="sk6-tag" x="11" y="16">A</text>
-<rect class="sk6-base" x="0" y="26.0" width="191.5" height="200.0" rx="4"></rect>
-<rect class="sk6-live" x="7.7" y="26.0" width="176.1" height="9.0" rx="2"></rect>
-<rect class="sk6-photo" x="65.1" y="38.0" width="114.9" height="120.0" rx="2"></rect>
-<rect class="sk6-type" x="11.5" y="46.0" width="76.6" height="24.0" rx="2"></rect>
-<rect class="sk6-live-h" x="11.5" y="76.0" width="53.6" height="9.6" rx="2"></rect>
-<rect class="sk6-photo" x="11.5" y="94.0" width="45.9" height="54.0" rx="2"></rect>
-<rect class="sk6-flat" x="0.0" y="166.0" width="191.5" height="20.0" rx="2"></rect>
-<rect class="sk6-flat" x="0.0" y="186.0" width="191.5" height="40.0" rx="2"></rect>
-<rect class="sk6-live-h" x="9.6" y="200.0" width="65.1" height="18.0" rx="2"></rect>
+<rect class="sk6-base" height="200.0" rx="4" width="191.5" x="0" y="26.0"></rect>
+<rect class="sk6-live" height="9.0" rx="2" width="176.1" x="7.7" y="26.0"></rect>
+<rect class="sk6-photo" height="120.0" rx="2" width="114.9" x="65.1" y="38.0"></rect>
+<rect class="sk6-type" height="24.0" rx="2" width="76.6" x="11.5" y="46.0"></rect>
+<rect class="sk6-live-h" height="9.6" rx="2" width="53.6" x="11.5" y="76.0"></rect>
+<rect class="sk6-photo" height="54.0" rx="2" width="45.9" x="11.5" y="94.0"></rect>
+<rect class="sk6-flat" height="20.0" rx="2" width="191.5" x="0.0" y="166.0"></rect>
+<rect class="sk6-flat" height="40.0" rx="2" width="191.5" x="0.0" y="186.0"></rect>
+<rect class="sk6-live-h" height="18.0" rx="2" width="65.1" x="9.6" y="200.0"></rect>
 <text class="sk6-lab" x="0" y="248.0">R1 · 605×632</text>
 <text class="sk6-lab2" x="0" y="267.0">淘宝促销</text>
 </g>
 <g transform="translate(243.5,0)">
-<rect class="sk6-tag-a" x="0" y="0" width="22" height="22" rx="6"></rect>
+<rect class="sk6-tag-a" height="22" rx="6" width="22" x="0" y="0"></rect>
 <text class="sk6-tag" x="11" y="16">A</text>
-<rect class="sk6-base" x="0" y="26.0" width="150.2" height="200.0" rx="4"></rect>
-<rect class="sk6-live" x="6.0" y="26.0" width="138.2" height="9.0" rx="2"></rect>
-<rect class="sk6-photo" x="51.1" y="38.0" width="90.1" height="120.0" rx="2"></rect>
-<rect class="sk6-type" x="9.0" y="46.0" width="60.1" height="24.0" rx="2"></rect>
-<rect class="sk6-live-h" x="9.0" y="76.0" width="42.1" height="9.6" rx="2"></rect>
-<rect class="sk6-photo" x="9.0" y="94.0" width="36.1" height="54.0" rx="2"></rect>
-<rect class="sk6-flat" x="0.0" y="166.0" width="150.2" height="20.0" rx="2"></rect>
-<rect class="sk6-flat" x="0.0" y="186.0" width="150.2" height="40.0" rx="2"></rect>
-<rect class="sk6-live-h" x="7.5" y="200.0" width="51.1" height="18.0" rx="2"></rect>
+<rect class="sk6-base" height="200.0" rx="4" width="150.2" x="0" y="26.0"></rect>
+<rect class="sk6-live" height="9.0" rx="2" width="138.2" x="6.0" y="26.0"></rect>
+<rect class="sk6-photo" height="120.0" rx="2" width="90.1" x="51.1" y="38.0"></rect>
+<rect class="sk6-type" height="24.0" rx="2" width="60.1" x="9.0" y="46.0"></rect>
+<rect class="sk6-live-h" height="9.6" rx="2" width="42.1" x="9.0" y="76.0"></rect>
+<rect class="sk6-photo" height="54.0" rx="2" width="36.1" x="9.0" y="94.0"></rect>
+<rect class="sk6-flat" height="20.0" rx="2" width="150.2" x="0.0" y="166.0"></rect>
+<rect class="sk6-flat" height="40.0" rx="2" width="150.2" x="0.0" y="186.0"></rect>
+<rect class="sk6-live-h" height="18.0" rx="2" width="51.1" x="7.5" y="200.0"></rect>
 <text class="sk6-lab" x="0" y="248.0">R2 · 462×615</text>
 <text class="sk6-lab2" x="0" y="267.0">淘宝促销</text>
 </g>
 <g transform="translate(421.7,0)">
-<rect class="sk6-tag-a" x="0" y="0" width="22" height="22" rx="6"></rect>
+<rect class="sk6-tag-a" height="22" rx="6" width="22" x="0" y="0"></rect>
 <text class="sk6-tag" x="11" y="16">A</text>
-<rect class="sk6-base" x="0" y="26.0" width="200.0" height="200.0" rx="4"></rect>
-<rect class="sk6-live" x="8.0" y="26.0" width="184.0" height="9.0" rx="2"></rect>
-<rect class="sk6-photo" x="68.0" y="38.0" width="120.0" height="120.0" rx="2"></rect>
-<rect class="sk6-type" x="12.0" y="46.0" width="80.0" height="24.0" rx="2"></rect>
-<rect class="sk6-live-h" x="12.0" y="76.0" width="56.0" height="9.6" rx="2"></rect>
-<rect class="sk6-photo" x="12.0" y="94.0" width="48.0" height="54.0" rx="2"></rect>
-<rect class="sk6-flat" x="0.0" y="166.0" width="200.0" height="20.0" rx="2"></rect>
-<rect class="sk6-flat" x="0.0" y="186.0" width="200.0" height="40.0" rx="2"></rect>
-<rect class="sk6-live-h" x="10.0" y="200.0" width="68.0" height="18.0" rx="2"></rect>
+<rect class="sk6-base" height="200.0" rx="4" width="200.0" x="0" y="26.0"></rect>
+<rect class="sk6-live" height="9.0" rx="2" width="184.0" x="8.0" y="26.0"></rect>
+<rect class="sk6-photo" height="120.0" rx="2" width="120.0" x="68.0" y="38.0"></rect>
+<rect class="sk6-type" height="24.0" rx="2" width="80.0" x="12.0" y="46.0"></rect>
+<rect class="sk6-live-h" height="9.6" rx="2" width="56.0" x="12.0" y="76.0"></rect>
+<rect class="sk6-photo" height="54.0" rx="2" width="48.0" x="12.0" y="94.0"></rect>
+<rect class="sk6-flat" height="20.0" rx="2" width="200.0" x="0.0" y="166.0"></rect>
+<rect class="sk6-flat" height="40.0" rx="2" width="200.0" x="0.0" y="186.0"></rect>
+<rect class="sk6-live-h" height="18.0" rx="2" width="68.0" x="10.0" y="200.0"></rect>
 <text class="sk6-lab" x="0" y="248.0">R3 · 615×615</text>
 <text class="sk6-lab2" x="0" y="267.0">淘宝促销</text>
 </g>
 <g transform="translate(649.7,0)">
-<rect class="sk6-tag-b" x="0" y="0" width="22" height="22" rx="6"></rect>
+<rect class="sk6-tag-b" height="22" rx="6" width="22" x="0" y="0"></rect>
 <text class="sk6-tag" x="11" y="16">B</text>
-<rect class="sk6-base" x="0" y="26.0" width="150.0" height="200.0" rx="4"></rect>
-<rect class="sk6-photo" x="0.0" y="26.0" width="150.0" height="144.0" rx="2"></rect>
-<rect class="sk6-flat" x="0.0" y="170.0" width="150.0" height="56.0" rx="2"></rect>
-<rect class="sk6-type" x="12.0" y="178.0" width="87.0" height="19.0" rx="2"></rect>
-<rect class="sk6-live-h" x="12.0" y="203.0" width="63.0" height="10.0" rx="2"></rect>
+<rect class="sk6-base" height="200.0" rx="4" width="150.0" x="0" y="26.0"></rect>
+<rect class="sk6-photo" height="144.0" rx="2" width="150.0" x="0.0" y="26.0"></rect>
+<rect class="sk6-flat" height="56.0" rx="2" width="150.0" x="0.0" y="170.0"></rect>
+<rect class="sk6-type" height="19.0" rx="2" width="87.0" x="12.0" y="178.0"></rect>
+<rect class="sk6-live-h" height="10.0" rx="2" width="63.0" x="12.0" y="203.0"></rect>
 <circle class="sk6-badge" cx="126.0" cy="190.0" r="7"></circle>
 <text class="sk6-lab" x="0" y="248.0">R4 · 1200×1600</text>
 <text class="sk6-lab2" x="0" y="267.0">黑金高端</text>
 </g>
 <g transform="translate(827.7,0)">
-<rect class="sk6-tag-c" x="0" y="0" width="22" height="22" rx="6"></rect>
+<rect class="sk6-tag-c" height="22" rx="6" width="22" x="0" y="0"></rect>
 <text class="sk6-tag" x="11" y="16">C</text>
-<rect class="sk6-base" x="0" y="26.0" width="131.2" height="200.0" rx="4"></rect>
-<rect class="sk6-live" x="0.0" y="26.0" width="131.2" height="28.0" rx="2"></rect>
-<rect class="sk6-type" x="7.9" y="32.0" width="73.5" height="14.0" rx="2"></rect>
-<rect class="sk6-photo" x="0.0" y="54.0" width="131.2" height="104.0" rx="2"></rect>
-<rect class="sk6-live-h" x="7.9" y="66.0" width="11.8" height="80.0" rx="2"></rect>
-<rect class="sk6-flat-h" x="7.9" y="166.0" width="63.0" height="9.6" rx="2"></rect>
-<rect class="sk6-live-h" x="7.9" y="182.0" width="49.9" height="9.6" rx="2"></rect>
-<rect class="sk6-live-h" x="110.2" y="206.0" width="15.8" height="9.6" rx="2"></rect>
+<rect class="sk6-base" height="200.0" rx="4" width="131.2" x="0" y="26.0"></rect>
+<rect class="sk6-live" height="28.0" rx="2" width="131.2" x="0.0" y="26.0"></rect>
+<rect class="sk6-type" height="14.0" rx="2" width="73.5" x="7.9" y="32.0"></rect>
+<rect class="sk6-photo" height="104.0" rx="2" width="131.2" x="0.0" y="54.0"></rect>
+<rect class="sk6-live-h" height="80.0" rx="2" width="11.8" x="7.9" y="66.0"></rect>
+<rect class="sk6-flat-h" height="9.6" rx="2" width="63.0" x="7.9" y="166.0"></rect>
+<rect class="sk6-live-h" height="9.6" rx="2" width="49.9" x="7.9" y="182.0"></rect>
+<rect class="sk6-live-h" height="9.6" rx="2" width="15.8" x="110.2" y="206.0"></rect>
 <text class="sk6-lab" x="0" y="248.0">R5 · 1050×1600</text>
 <text class="sk6-lab2" x="0" y="267.0">杂志风</text>
 </g>
 <g transform="translate(986.9,0)">
-<rect class="sk6-tag-b" x="0" y="0" width="22" height="22" rx="6"></rect>
+<rect class="sk6-tag-b" height="22" rx="6" width="22" x="0" y="0"></rect>
 <text class="sk6-tag" x="11" y="16">B</text>
-<rect class="sk6-base" x="0" y="26.0" width="112.5" height="200.0" rx="4"></rect>
-<rect class="sk6-photo" x="0.0" y="26.0" width="112.5" height="144.0" rx="2"></rect>
-<rect class="sk6-flat" x="0.0" y="170.0" width="112.5" height="56.0" rx="2"></rect>
-<rect class="sk6-type" x="9.0" y="178.0" width="65.2" height="19.0" rx="2"></rect>
-<rect class="sk6-live-h" x="9.0" y="203.0" width="47.2" height="10.0" rx="2"></rect>
+<rect class="sk6-base" height="200.0" rx="4" width="112.5" x="0" y="26.0"></rect>
+<rect class="sk6-photo" height="144.0" rx="2" width="112.5" x="0.0" y="26.0"></rect>
+<rect class="sk6-flat" height="56.0" rx="2" width="112.5" x="0.0" y="170.0"></rect>
+<rect class="sk6-type" height="19.0" rx="2" width="65.2" x="9.0" y="178.0"></rect>
+<rect class="sk6-live-h" height="10.0" rx="2" width="47.2" x="9.0" y="203.0"></rect>
 <circle class="sk6-badge" cx="94.5" cy="190.0" r="7"></circle>
 <text class="sk6-lab" x="0" y="248.0">R6 · 1080×1920</text>
 <text class="sk6-lab2" x="0" y="267.0">黑金高端</text>
 </g>
 <text class="sk6-note" x="24" y="292.0">画布按真实比例缩放　·　A 淘宝促销（R1 R2 R3）　B 黑金高端（R4 R6）　C 杂志风（R5）</text>
 </svg></div>
-    <figcaption class="cap">六张参考图归纳为三套版式体系。画布按真实比例缩放，方块仅标注区块位置与层级；图中不含任何第三方品牌元素。<span class="swipe">（手机上可横向滑动）</span></figcaption>
-  </figure>
+<figcaption class="cap">六张参考图归纳为三套版式体系。画布按真实比例缩放，方块仅标注区块位置与层级；图中不含任何第三方品牌元素。<span class="swipe">（手机上可横向滑动）</span></figcaption>
+</figure>
+<table class="tbl">
+<thead><tr><th>参考图</th><th>版式体系</th><th>画布</th><th>文字元素</th><th>美术素材</th><th>文字可改</th><th>版式还原</th></tr></thead>
+<tbody>
+<tr><td class="rowname">R1 淘宝促销 · 小煮锅</td><td>A 淘宝促销</td><td>605×632</td><td>12</td><td>8</td><td class="num">可改</td><td>照片色块一致</td></tr>
+<tr><td class="rowname">R2 淘宝促销 · LED 灯带</td><td>A 淘宝促销</td><td>462×615</td><td>10</td><td>7</td><td class="num">可改</td><td>照片色块一致</td></tr>
+<tr><td class="rowname">R3 淘宝促销 · 厨电场景</td><td>A 淘宝促销</td><td>615×615</td><td>11</td><td>1</td><td class="num">可改</td><td>版式一致</td></tr>
+<tr><td class="rowname">R4 黑金高端 · 灯饰</td><td>B 黑金高端</td><td>1200×1600</td><td>4</td><td>6</td><td class="num">可改</td><td class="best">与原图一致</td></tr>
+<tr><td class="rowname">R5 杂志风 · 厨具</td><td>C 杂志风</td><td>1050×1600</td><td>18</td><td>4</td><td class="num">可改</td><td>照片色块一致</td></tr>
+<tr><td class="rowname">R6 黑金高端 · 饰品</td><td>B 黑金高端</td><td>1080×1920</td><td>9</td><td>9</td><td class="num">可改</td><td>照片色块一致</td></tr>
+</tbody>
+</table>
 
-  <table class="tbl rv in">
-    <thead><tr><th>参考图</th><th>版式体系</th><th>画布</th><th>文字元素</th><th>美术素材</th><th>文字可改</th><th>版式还原</th></tr></thead>
-    <tbody>
-      <tr><td class="rowname">R1 淘宝促销 · 小煮锅</td><td>A 淘宝促销</td><td>605×632</td><td>12</td><td>8</td><td class="num">可改</td><td>照片色块一致</td></tr>
-      <tr><td class="rowname">R2 淘宝促销 · LED 灯带</td><td>A 淘宝促销</td><td>462×615</td><td>10</td><td>7</td><td class="num">可改</td><td>照片色块一致</td></tr>
-      <tr><td class="rowname">R3 淘宝促销 · 厨电场景</td><td>A 淘宝促销</td><td>615×615</td><td>11</td><td>1</td><td class="num">可改</td><td>版式一致</td></tr>
-      <tr><td class="rowname">R4 黑金高端 · 灯饰</td><td>B 黑金高端</td><td>1200×1600</td><td>4</td><td>6</td><td class="num">可改</td><td class="best">与原图一致</td></tr>
-      <tr><td class="rowname">R5 杂志风 · 厨具</td><td>C 杂志风</td><td>1050×1600</td><td>18</td><td>4</td><td class="num">可改</td><td>照片色块一致</td></tr>
-      <tr><td class="rowname">R6 黑金高端 · 饰品</td><td>B 黑金高端</td><td>1080×1920</td><td>9</td><td>9</td><td class="num">可改</td><td>照片色块一致</td></tr>
-    </tbody>
-  </table>
-
-  
-
-  <details>
-    <summary>展开四条铁律、负结果与诚实边界</summary>
-    <div class="dbody">
-      <div class="rules" style="margin-bottom:18px">
-        <div class="rule icard rv"><div class="no">RULE 1</div><h4>挖字掩膜用文字自身 fill 色</h4><p>用「与区域众数色差异大」当判据时，小区域的众数色会被文字本身带偏，把胶囊底、价卡底一起挖掉，渲出来是白块。</p><div class="tip">掩膜＝文字自己的填充色</div></div>
-        <div class="rule icard rv"><div class="no">RULE 2</div><h4>背景回填用留出法选算法</h4><p>判据不能是「重建结果和原图差多少」——那一格是字不是背景，越像字越准。留出法：随机挑已知背景像素当考卷，给 inpaint 和多项式拟合打分。</p><div class="tip">六张实测 inpaint 全部胜出</div></div>
-        <div class="rule icard rv"><div class="no">RULE 3</div><h4>寻优的当前值必须进候选集</h4><p>否则越寻越差：候选里没有现值时，最优解必然比现值差，引擎却照样写进 HTML（R2 首次寻优 y 值 125→127，误差反增）。</p><div class="tip">现值永远在候选集里</div></div>
-        <div class="rule icard rv"><div class="no">RULE 4</div><h4>指标要和交付物本身对账</h4><p>打包脚本从 spec 重新生成时会退化成打回前的值。交付前加一道验收脚本，把交付包重渲一遍跟报告逐张对照——第一跑就抓到两处不一致。</p><div class="tip">交付前自动对账，抓出两处不一致</div></div>
-      </div>
-      <p class="note">
-        <b>负结果也记：</b>为让 R5 的白字鬼影消失，给掩膜加「多膨胀 1~2px」，实测 R2/R3/R4/R5 <b>全部变差</b>（R5 反而更差）。原因：吃掉边缘的同时也吃掉周围背景，inpaint 的洞更大、拖出来的糊更多。参数保留在引擎里但默认关闭。
+<details>
+<summary>展开四条铁律、负结果与诚实边界</summary>
+<div class="dbody">
+<div class="rules" style="margin-bottom:18px">
+<div class="rule icard"><div class="no">RULE 1</div><h4>挖字掩膜用文字自身 fill 色</h4><p>用「与区域众数色差异大」当判据时，小区域的众数色会被文字本身带偏，把胶囊底、价卡底一起挖掉，渲出来是白块。</p><div class="tip">掩膜＝文字自己的填充色</div></div>
+<div class="rule icard"><div class="no">RULE 2</div><h4>背景回填用留出法选算法</h4><p>判据不能是「重建结果和原图差多少」——那一格是字不是背景，越像字越准。留出法：随机挑已知背景像素当考卷，给 inpaint 和多项式拟合打分。</p><div class="tip">六张实测 inpaint 全部胜出</div></div>
+<div class="rule icard"><div class="no">RULE 3</div><h4>寻优的当前值必须进候选集</h4><p>否则越寻越差：候选里没有现值时，最优解必然比现值差，引擎却照样写进 HTML（R2 首次寻优 y 值 125→127，误差反增）。</p><div class="tip">现值永远在候选集里</div></div>
+<div class="rule icard"><div class="no">RULE 4</div><h4>指标要和交付物本身对账</h4><p>打包脚本从 spec 重新生成时会退化成打回前的值。交付前加一道验收脚本，把交付包重渲一遍跟报告逐张对照——第一跑就抓到两处不一致。</p><div class="tip">交付前自动对账，抓出两处不一致</div></div>
+</div>
+<p class="note">
+<b>负结果也记：</b>为让 R5 的白字鬼影消失，给掩膜加「多膨胀 1~2px」，实测 R2/R3/R4/R5 <b>全部变差</b>（R5 反而更差）。原因：吃掉边缘的同时也吃掉周围背景，inpaint 的洞更大、拖出来的糊更多。参数保留在引擎里但默认关闭。
         <span class="sep"><b>诚实边界：</b>这六张是<b>复刻稿</b>，是方法论证明，不是原创设计，<b>不作为原创作品对外展示</b>。非文字部分与原图一致，说明<b>分层本身是干净的</b>——素材层和照片层逐像素还原，残差 100% 来自字体替代。字体替代是这套方法的天花板，要突破只能上商业字体授权或自建字体。</span>
-      </p>
-    </div>
-  </details>
-<div class="nextbar"><a href="#method"><span class="nl">下一节</span><span class="nt">方法沉淀 →</span></a></div></div></section>
-
+</p>
+</div>
+</details>
+</div></section>
 <!-- ================= 方法论 ================= -->
 <section class="band" id="method"><div class="wrap">
-  <div class="sec-head b rv">
-    <div class="no">09 · 方法沉淀</div>
-    <h2>设计方法资产化</h2>
-    <p class="sub">将流程固化为模板、脚本与评审清单，形成可复用的生产标准，更换品类无需从零重建。</p>
-  </div>
-
-  <div class="flow rv">
-    <span class="s"><u>1</u>定量拆解</span><span class="ar">›</span>
-    <span class="s"><u>2</u>出底图</span><span class="ar">›</span>
-    <span class="s"><u>3</u>可编程排版</span><span class="ar">›</span>
-    <span class="s"><u>4</u>自动校准</span><span class="ar">›</span>
-    <span class="s"><u>5</u>评审</span><span class="ar">›</span>
-    <span class="s"><u>6</u>沉淀</span>
-  </div>
-
-  <div class="wallhead rv">
-    <span class="wt">同一条套图流水线覆盖七个照明品类</span>
-    <span class="wl">每一张均可单独上架</span>
-  </div>
-  <div class="wall rv">
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t01.jpg" data-full="assets/wall42/01.jpg" alt="吸顶灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">吸顶灯 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t07.jpg" data-full="assets/wall42/07.jpg" alt="射灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">射灯 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t13.jpg" data-full="assets/wall42/13.jpg" alt="护眼台灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">护眼台灯 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t19.jpg" data-full="assets/wall42/19.jpg" alt="橱柜灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">橱柜灯 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t25.jpg" data-full="assets/wall42/25.jpg" alt="灯带 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">灯带 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t31.jpg" data-full="assets/wall42/31.jpg" alt="球泡灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">球泡灯 · 场景主图</figcaption></figure>
-    <figure class="wtile"><div class="shot"><img src="assets/wall42/t37.jpg" data-full="assets/wall42/37.jpg" alt="筒灯 · 场景主图" loading="lazy" decoding="async" class="il done"></div><figcaption class="cap">筒灯 · 场景主图</figcaption></figure>
-  </div>
-
-
-  <div class="prins">
-    <div class="prin icard rv"><h4>量化 &gt; 目测</h4><p>所有坐标、色值与字宽均以像素测量为准，不依赖目视对齐。</p><div class="no">✗ 目测对齐，版本迭代即产生偏移</div><div class="ok">✓ 脚本自动比对，2~3 轮内收敛</div></div>
-    <div class="prin icard rv"><h4>像素素材优先于字体替代</h4><p>3D 美术字、书法字与品牌标识均无开源字体等价物，采用抠图可与原图对齐。</p><div class="no">✗ 以近似字体替代</div><div class="ok">✓ 抠图 + 实心裁切兜底</div></div>
-    <div class="prin icard rv"><h4>还原稿不作为原创作品</h4><p>竞品还原仅作方法论验证，原创产出须落在自有产品上。</p><div class="no">✗ 以复刻稿充当作品集</div><div class="ok">✓ 拆解卡 + 自研版式 + 自有产品</div></div>
-    <div class="prin icard rv"><h4>不编造产品事实</h4><p>价格、品牌、活动与性能宣称均需有据，缺失信息一律留空占位，不做推测。</p><div class="no">✗ 使用「护眼 / 无频闪」等无依据宣称</div><div class="ok">✓ 虚线占位 + 填写清单</div></div>
-  </div>
-<div class="nextbar"><a href="#files"><span class="nl">下一节</span><span class="nt">交付物清单 →</span></a></div></div></section>
-
+<div class="sec-head b">
+<div class="no">09 · 方法沉淀</div>
+<h2>设计方法资产化</h2>
+<p class="sub">将流程固化为模板、脚本与评审清单，形成可复用的生产标准，更换品类无需从零重建。</p>
+</div>
+<div class="flow">
+<span class="s"><u>1</u>定量拆解</span><span class="ar">›</span>
+<span class="s"><u>2</u>出底图</span><span class="ar">›</span>
+<span class="s"><u>3</u>可编程排版</span><span class="ar">›</span>
+<span class="s"><u>4</u>自动校准</span><span class="ar">›</span>
+<span class="s"><u>5</u>评审</span><span class="ar">›</span>
+<span class="s"><u>6</u>沉淀</span>
+</div>
+<div class="wallhead">
+<span class="wt">同一条套图流水线覆盖七个照明品类</span>
+<span class="wl">每一张均可单独上架</span>
+</div>
+<div class="wall">
+<figure class="wtile"><div class="shot"><img alt="吸顶灯 · 场景主图" data-full="assets/wall42/01.jpg" decoding="async" loading="lazy" src="assets/wall42/t01.jpg"/></div><figcaption class="cap">吸顶灯 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="射灯 · 场景主图" data-full="assets/wall42/07.jpg" decoding="async" loading="lazy" src="assets/wall42/t07.jpg"/></div><figcaption class="cap">射灯 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="护眼台灯 · 场景主图" data-full="assets/wall42/13.jpg" decoding="async" loading="lazy" src="assets/wall42/t13.jpg"/></div><figcaption class="cap">护眼台灯 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="橱柜灯 · 场景主图" data-full="assets/wall42/19.jpg" decoding="async" loading="lazy" src="assets/wall42/t19.jpg"/></div><figcaption class="cap">橱柜灯 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="灯带 · 场景主图" data-full="assets/wall42/25.jpg" decoding="async" loading="lazy" src="assets/wall42/t25.jpg"/></div><figcaption class="cap">灯带 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="球泡灯 · 场景主图" data-full="assets/wall42/31.jpg" decoding="async" loading="lazy" src="assets/wall42/t31.jpg"/></div><figcaption class="cap">球泡灯 · 场景主图</figcaption></figure>
+<figure class="wtile"><div class="shot"><img alt="筒灯 · 场景主图" data-full="assets/wall42/37.jpg" decoding="async" loading="lazy" src="assets/wall42/t37.jpg"/></div><figcaption class="cap">筒灯 · 场景主图</figcaption></figure>
+</div>
+<div class="prins">
+<div class="prin icard"><h4>量化 &gt; 目测</h4><p>所有坐标、色值与字宽均以像素测量为准，不依赖目视对齐。</p><div class="no">✗ 目测对齐，版本迭代即产生偏移</div><div class="ok">✓ 脚本自动比对，2~3 轮内收敛</div></div>
+<div class="prin icard"><h4>像素素材优先于字体替代</h4><p>3D 美术字、书法字与品牌标识均无开源字体等价物，采用抠图可与原图对齐。</p><div class="no">✗ 以近似字体替代</div><div class="ok">✓ 抠图 + 实心裁切兜底</div></div>
+<div class="prin icard"><h4>还原稿不作为原创作品</h4><p>竞品还原仅作方法论验证，原创产出须落在自有产品上。</p><div class="no">✗ 以复刻稿充当作品集</div><div class="ok">✓ 拆解卡 + 自研版式 + 自有产品</div></div>
+<div class="prin icard"><h4>不编造产品事实</h4><p>价格、品牌、活动与性能宣称均需有据，缺失信息一律留空占位，不做推测。</p><div class="no">✗ 使用「护眼 / 无频闪」等无依据宣称</div><div class="ok">✓ 虚线占位 + 填写清单</div></div>
+</div>
+</div></section>
 <!-- ================= 交付物 ================= -->
 <section class="band alt" id="files"><div class="wrap">
-  <div class="sec-head a rv">
-    <div class="no">10 · 交付物清单</div>
-    <h2>标准交付物结构</h2>
-    <p class="sub">成品图、可编辑源件、拆解说明与复现脚本成套归档，素材与源件均保留在本地，可逐项复核。</p>
-  </div>
-  
+<div class="sec-head a">
+<div class="no">10 · 交付物清单</div>
+<h2>标准交付物结构</h2>
+<p class="sub">成品图、可编辑源件、拆解说明与复现脚本成套归档，素材与源件均保留在本地，可逐项复核。</p>
+</div>
 
-  <div class="files">
-    <div class="fgroup icard rv"><div class="p">05_成品与源文件/</div><div class="d">1x 原尺寸 + 2x/3x 交付稿 + 无黑边版 + 对比图 + 差异热力图；源件包内 index.html 为唯一编辑入口。</div></div>
-    <div class="fgroup icard rv"><div class="p">02_参考与拆解/</div><div class="d">原图 + 拆解说明（元素坐标 / 色值 / 字号全表）+ 版式还原流水线六图实测报告。</div></div>
-    <div class="fgroup icard rv"><div class="p">03_提示词库/ + 07_知识库/</div><div class="d">6 个图位的正向提示词、反推版式拆解卡模板，以及从实战抽象出的通用设计原则。</div></div>
-    <div class="fgroup icard rv"><div class="p">04_生成与改稿/</div><div class="d">自动重建脚本（素材处理 / 文字重建 / 像素校准 / 寻优 / 双版本交付）+ 版式配方 + 交付验收脚本。</div></div>
-  </div>
+<div class="files">
+<div class="fgroup icard"><div class="p">05_成品与源文件/</div><div class="d">1x 原尺寸 + 2x/3x 交付稿 + 无黑边版 + 对比图 + 差异热力图；源件包内 index.html 为唯一编辑入口。</div></div>
+<div class="fgroup icard"><div class="p">02_参考与拆解/</div><div class="d">原图 + 拆解说明（元素坐标 / 色值 / 字号全表）+ 版式还原流水线六图实测报告。</div></div>
+<div class="fgroup icard"><div class="p">03_提示词库/ + 07_知识库/</div><div class="d">6 个图位的正向提示词、反推版式拆解卡模板，以及从实战抽象出的通用设计原则。</div></div>
+<div class="fgroup icard"><div class="p">04_生成与改稿/</div><div class="d">自动重建脚本（素材处理 / 文字重建 / 像素校准 / 寻优 / 双版本交付）+ 版式配方 + 交付验收脚本。</div></div>
+</div>
+<div class="dlrow">
 
-  <div class="dlrow">
-    
-    <a class="btn ghost mag" href="assets/portfolio_2026.pdf" download="陈强_视觉作品_作品集_2026.pdf">下载作品集 PDF</a>
-  </div>
-<div class="nextbar"><a href="#top"><span class="nl">下一节</span><span class="nt">回到顶部 →</span></a></div></div></section>
-
+<a class="btn ghost" download="陈强_视觉作品_作品集_2026.pdf" href="assets/portfolio_2026.pdf">下载作品集 PDF</a>
+</div>
+</div></section>
 <!-- ================= FOOTER ================= -->
 <footer><div class="wrap">
-  <div class="top">
-    <div>
-      <h3>视觉作品</h3>
-      <p class="note">拆解 → 重建 → 校准。复刻稿仅作方法论验证，不作为原创作品对外展示；参考图版权归原品牌，页面内仅作对照教学；价格、品牌、活动等无依据处一律留空占位。</p>
-    </div>
-  </div>
-  <!-- 联系方式：邮箱已定，微信待补 -->
-  <button id="totop" aria-label="回到顶部" class="">↑</button>
-  <div class="contact">
-    <div class="citem"><span class="ck">Email</span><a class="cv" href="mailto:chennuomi17@gmail.com">chennuomi17@gmail.com</a></div>
-    <div class="citem"><span class="ck">QQ</span><span class="cv">2913454968</span></div>
-    <div class="citem"><span class="ck">源件包</span><span class="cv">可编辑源件 + 拆解说明 + 复现脚本</span></div>
-    <div class="citem"><span class="ck">PDF 作品集</span><a class="cv" href="assets/portfolio_2026.pdf" download="陈强_视觉作品_作品集_2026.pdf">作品集 PDF · 全部成品图</a></div>
-    
-  </div>
+<div class="top">
+<div>
+<h3>视觉作品</h3>
+<p class="note">拆解 → 重建 → 校准。复刻稿仅作方法论验证，不作为原创作品对外展示；参考图版权归原品牌，页面内仅作对照教学；价格、品牌、活动等无依据处一律留空占位。</p>
+</div>
+</div>
+<!-- 联系方式：邮箱已定，微信待补 -->
+<button aria-label="回到顶部" id="totop">↑</button>
+<div class="contact">
+<div class="citem"><span class="ck">Email</span><a class="cv" href="mailto:chennuomi17@gmail.com">chennuomi17@gmail.com</a></div>
+<div class="citem"><span class="ck">QQ</span><span class="cv">2913454968</span></div>
+<div class="citem"><span class="ck">源件包</span><span class="cv">可编辑源件 + 拆解说明 + 复现脚本</span></div>
+<div class="citem"><span class="ck">PDF 作品集</span><a class="cv" download="陈强_视觉作品_作品集_2026.pdf" href="assets/portfolio_2026.pdf">作品集 PDF · 全部成品图</a></div>
+
+</div>
 </div></footer>
-
-
-<div id="lb" role="dialog" aria-modal="true" aria-label="作品大图">
-  <button class="close" id="lbClose" aria-label="关闭">×</button>
-  <button class="nav prev" id="lbPrev" aria-label="上一张">‹</button>
-  <button class="nav next" id="lbNext" aria-label="下一张">›</button>
-  <img id="lbImg" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="il">
-  <div class="cap" id="lbCap"></div>
-  <a class="dl" id="lbDl" download="" aria-label="下载这张图">下载原图</a>
-  <div class="cnt" id="lbCnt"></div>
+<div aria-label="作品大图" aria-modal="true" id="lb" role="dialog">
+<button aria-label="关闭" class="close" id="lbClose">×</button>
+<button aria-label="上一张" class="nav prev" id="lbPrev">‹</button>
+<button aria-label="下一张" class="nav next" id="lbNext">›</button>
+<img alt="" id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="/>
+<div class="cap" id="lbCap"></div>
+<a aria-label="下载这张图" class="dl" download="" id="lbDl">下载原图</a>
+<div class="cnt" id="lbCnt"></div>
 </div>
-<div id="gal" role="dialog" aria-modal="true" aria-label="全部作品">
-  <div class="ghead">
-    <div><span class="gt">全部作品</span><span class="gc" id="galCnt"></span></div>
-    <button id="galClose" aria-label="关闭">×</button>
-  </div>
-  <div class="ggrid" id="galGrid"></div>
+<div aria-label="全部作品" aria-modal="true" id="gal" role="dialog">
+<div class="ghead">
+<div><span class="gt">全部作品</span><span class="gc" id="galCnt"></span></div>
+<button aria-label="关闭" id="galClose">×</button>
 </div>
-
-
+<div class="ggrid" id="galGrid"></div>
+</div>
 <script>
 (function () {
   var reduced = !window.__MOTION;
@@ -3030,7 +2965,6 @@ window.__PROJECTS = [
 })();
 </script>
 <script src="assets/ocean.js"></script>
-
 <script>
 /* ================= P0 框架：全部章节目录 ================= */
 (function () {
@@ -3049,7 +2983,6 @@ window.__PROJECTS = [
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
 })();
 </script>
-
 <!-- ================= 键盘快捷键 ================= -->
 <script>
 (function () {
@@ -3087,7 +3020,6 @@ window.__PROJECTS = [
   });
 })();
 </script>
-
 <!-- ================= 链接参数：分享时精准落点 =================
      ?sec=w3      直达某一段（p1/p2/crt/p3/pf/w1..w4/method/files）
      ?gal=1       打开时直接进全屏画廊
@@ -3113,9 +3045,8 @@ window.__PROJECTS = [
   }
 })();
 </script>
-
-
-
+</body>
+<!-- ================= 打印专用覆盖（放最后，优先级最高） ================= -->
 <style id="printfix">
 @media print{
   /* A4 横向：布局视口 ~1055px，越过 820px 断点，桌面网格生效 */
@@ -3176,6 +3107,4 @@ window.__PROJECTS = [
   .hero .lead{font-size:10pt!important;max-width:none!important}
 }
 </style>
-
-
-</body><!-- ================= 打印专用覆盖（放最后，优先级最高） ================= --></html>
+</html>
